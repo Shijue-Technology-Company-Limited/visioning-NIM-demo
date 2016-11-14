@@ -1,0 +1,14 @@
+//
+//  nim_adhoc.xcconfig
+//  NIM
+//
+//  Created by amao on 9/22/15.
+//  Copyright © 2015 Netease. All rights reserved.
+//
+
+#include "../../Pods/Target Support Files/Pods/Pods.release.xcconfig"
+
+XCCONFIG_BUNDLE_ID                  = com.netease.NIM.demo
+XCCONFIG_BUNDLE_NAME                = 云信 Demo
+XCCONFIG_CODE_SIGNING               = iPhone Distribution: Cooperation Communication Operating and Support Center China Telecom
+XCCONFIG_PROVISIONING_PROFILE       = 4c1bdd3e-1930-4161-a8fe-90bfb3d3a27a

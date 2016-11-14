@@ -1,0 +1,1591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25CE4DCC9991942C57ECB956 /* libopenh264.a */ = {isa = PBXBuildFile; fileRef = A7544378BA5B2F18BDCC0227 /* libopenh264.a */; };
+		3579414FA177B0D703E94FE7 /* libcrypto.a */ = {isa = PBXBuildFile; fileRef = 383045D7B4B01D892377024E /* libcrypto.a */; };
+		4EEE48D9956F5BC090A53ADC /* libnio.a */ = {isa = PBXBuildFile; fileRef = A8B148EDB34AAE2728E382F3 /* libnio.a */; };
+		610D71A11D0E5A9C00FCE25A /* NIMKitNotificationFirer.m */ = {isa = PBXBuildFile; fileRef = 610D71A01D0E5A9C00FCE25A /* NIMKitNotificationFirer.m */; };
+		6110D8AF1C24001300805BA4 /* UITableView+NIMScrollToBottom.m */ = {isa = PBXBuildFile; fileRef = 6110D8AE1C24001300805BA4 /* UITableView+NIMScrollToBottom.m */; };
+		611B65DA1BA8591700038641 /* NIMContactSelectTabView.m */ = {isa = PBXBuildFile; fileRef = 611B65D91BA8591700038641 /* NIMContactSelectTabView.m */; };
+		6132C7141BA7C47C00897DDB /* NIMContactDataCell.m */ = {isa = PBXBuildFile; fileRef = 6132C7101BA7C47C00897DDB /* NIMContactDataCell.m */; };
+		614B8E351C5209940091BF28 /* NIMTipContentConfig.m */ = {isa = PBXBuildFile; fileRef = 614B8E341C5209940091BF28 /* NIMTipContentConfig.m */; };
+		6157802E1B8F246F00C441F2 /* NIMKitTimerHolder.m */ = {isa = PBXBuildFile; fileRef = 6157802D1B8F246F00C441F2 /* NIMKitTimerHolder.m */; };
+		615BD0F31B85A6A2000F174B /* NIMLoadProgressView.m */ = {isa = PBXBuildFile; fileRef = 615BD0F21B85A6A2000F174B /* NIMLoadProgressView.m */; };
+		6187F9D41B81915700EFFB3A /* NIMAttributedLabel.m */ = {isa = PBXBuildFile; fileRef = E4EF06E11B7DAFCA006669AC /* NIMAttributedLabel.m */; };
+		6187F9D51B81915700EFFB3A /* NIMAttributedLabelAttachment.m */ = {isa = PBXBuildFile; fileRef = E4EF06E31B7DAFCA006669AC /* NIMAttributedLabelAttachment.m */; };
+		6187F9D61B81915700EFFB3A /* NIMAttributedLabelURL.m */ = {isa = PBXBuildFile; fileRef = E4EF06E61B7DAFCA006669AC /* NIMAttributedLabelURL.m */; };
+		6187F9D71B81915700EFFB3A /* NSMutableAttributedString+NIM.m */ = {isa = PBXBuildFile; fileRef = E4EF06E81B7DAFCA006669AC /* NSMutableAttributedString+NIM.m */; };
+		6187F9D81B81915700EFFB3A /* NIMImageCache.m */ = {isa = PBXBuildFile; fileRef = E4EF06EB1B7DAFCA006669AC /* NIMImageCache.m */; };
+		6187F9D91B81915700EFFB3A /* NIMWebImageCompat.m */ = {isa = PBXBuildFile; fileRef = E4EF06ED1B7DAFCA006669AC /* NIMWebImageCompat.m */; };
+		6187F9DA1B81915700EFFB3A /* NIMWebImageDecoder.m */ = {isa = PBXBuildFile; fileRef = E4EF06EF1B7DAFCA006669AC /* NIMWebImageDecoder.m */; };
+		6187F9DB1B81915700EFFB3A /* NIMWebImageDownloader.m */ = {isa = PBXBuildFile; fileRef = E4EF06F11B7DAFCA006669AC /* NIMWebImageDownloader.m */; };
+		6187F9DC1B81915700EFFB3A /* NIMWebImageDownloaderOperation.m */ = {isa = PBXBuildFile; fileRef = E4EF06F31B7DAFCA006669AC /* NIMWebImageDownloaderOperation.m */; };
+		6187F9DD1B81915700EFFB3A /* NIMWebImageManager.m */ = {isa = PBXBuildFile; fileRef = E4EF06F51B7DAFCA006669AC /* NIMWebImageManager.m */; };
+		6187F9DE1B81915700EFFB3A /* NIMWebImagePrefetcher.m */ = {isa = PBXBuildFile; fileRef = E4EF06F81B7DAFCA006669AC /* NIMWebImagePrefetcher.m */; };
+		6187F9DF1B81915700EFFB3A /* NSData+NIMImageContentType.m */ = {isa = PBXBuildFile; fileRef = E4EF06FA1B7DAFCA006669AC /* NSData+NIMImageContentType.m */; };
+		6187F9E01B81915700EFFB3A /* UIImage+NIMGIF.m */ = {isa = PBXBuildFile; fileRef = E4EF06FC1B7DAFCA006669AC /* UIImage+NIMGIF.m */; };
+		6187F9E11B81915700EFFB3A /* UIImage+NIMMultiFormat.m */ = {isa = PBXBuildFile; fileRef = E4EF06FE1B7DAFCA006669AC /* UIImage+NIMMultiFormat.m */; };
+		6187F9E21B81915700EFFB3A /* UIView+NIMWebCacheOperation.m */ = {isa = PBXBuildFile; fileRef = E4EF07001B7DAFCA006669AC /* UIView+NIMWebCacheOperation.m */; };
+		6187F9E31B81915700EFFB3A /* NIMMediaItem.m */ = {isa = PBXBuildFile; fileRef = E4EF074D1B7DB3A2006669AC /* NIMMediaItem.m */; };
+		6187F9E51B81915700EFFB3A /* NIMMessageModel.m */ = {isa = PBXBuildFile; fileRef = E4EF07371B7DB2B9006669AC /* NIMMessageModel.m */; };
+		6187F9E61B81915700EFFB3A /* NIMKitEvent.m */ = {isa = PBXBuildFile; fileRef = 61592B7E1B7E05E300BC38C0 /* NIMKitEvent.m */; };
+		6187F9E71B81915700EFFB3A /* NIMKitUtil.m */ = {isa = PBXBuildFile; fileRef = 61B1F7A31B7866160065FEFB /* NIMKitUtil.m */; };
+		6187F9E81B81915700EFFB3A /* NIMBadgeView.m */ = {isa = PBXBuildFile; fileRef = E4EF072D1B7DB285006669AC /* NIMBadgeView.m */; };
+		6187F9E91B81915700EFFB3A /* NIMCustomLeftBarView.m */ = {isa = PBXBuildFile; fileRef = 6114BBC71B78F7C100D5AD02 /* NIMCustomLeftBarView.m */; };
+		6187F9EA1B81915700EFFB3A /* NIMAvatarImageView.m */ = {isa = PBXBuildFile; fileRef = 619AF5C01B788E5E0073623F /* NIMAvatarImageView.m */; };
+		6187F9EB1B81915700EFFB3A /* NIMPageView.m */ = {isa = PBXBuildFile; fileRef = 61DFDA7F1B764FAE00DD5F2A /* NIMPageView.m */; };
+		6187F9EC1B81915700EFFB3A /* NIMInputEmoticonParser.m */ = {isa = PBXBuildFile; fileRef = 61B1F7B71B7885B50065FEFB /* NIMInputEmoticonParser.m */; };
+		6187F9ED1B81915700EFFB3A /* NIMInputMoreContainerView.m */ = {isa = PBXBuildFile; fileRef = 61DFDA681B764E9600DD5F2A /* NIMInputMoreContainerView.m */; };
+		6187F9EE1B81915700EFFB3A /* NIMInputTextView.m */ = {isa = PBXBuildFile; fileRef = 61DFDA6A1B764E9600DD5F2A /* NIMInputTextView.m */; };
+		6187F9EF1B81915700EFFB3A /* NIMInputView.m */ = {isa = PBXBuildFile; fileRef = 61DFDA6C1B764E9600DD5F2A /* NIMInputView.m */; };
+		6187F9F01B81915700EFFB3A /* NIMInputToolBar.m */ = {isa = PBXBuildFile; fileRef = 614B711D1B78C22E00F02B1B /* NIMInputToolBar.m */; };
+		6187F9F11B81915700EFFB3A /* NIMInputEmoticonContainerView.m */ = {isa = PBXBuildFile; fileRef = 615E0C091B76573200B404FB /* NIMInputEmoticonContainerView.m */; };
+		6187F9F21B81915700EFFB3A /* NIMInputEmoticonButton.m */ = {isa = PBXBuildFile; fileRef = 615E0C0F1B7659BB00B404FB /* NIMInputEmoticonButton.m */; };
+		6187F9F31B81915700EFFB3A /* NIMInputEmoticonManager.m */ = {isa = PBXBuildFile; fileRef = 615E0C161B765C5B00B404FB /* NIMInputEmoticonManager.m */; };
+		6187F9F41B81915700EFFB3A /* NIMInputEmoticonTabView.m */ = {isa = PBXBuildFile; fileRef = 6198A5D51B766494001757B6 /* NIMInputEmoticonTabView.m */; };
+		6187F9F51B81915700EFFB3A /* NIMInputAudioRecordIndicatorView.m */ = {isa = PBXBuildFile; fileRef = 6198A5EA1B7712FA001757B6 /* NIMInputAudioRecordIndicatorView.m */; };
+		6187F9F61B81915700EFFB3A /* NIMSessionViewController.m */ = {isa = PBXBuildFile; fileRef = E4EF07421B7DB2F7006669AC /* NIMSessionViewController.m */; };
+		6187F9F71B81915700EFFB3A /* NIMSessionMessageContentView.m */ = {isa = PBXBuildFile; fileRef = E4EF07461B7DB31D006669AC /* NIMSessionMessageContentView.m */; };
+		6187F9F81B81915700EFFB3A /* NIMSessionTimestampCell.m */ = {isa = PBXBuildFile; fileRef = 614B71171B78A34700F02B1B /* NIMSessionTimestampCell.m */; };
+		6187F9F91B81915700EFFB3A /* NIMMessageCell.m */ = {isa = PBXBuildFile; fileRef = 6191674C1B7788D300B5A31C /* NIMMessageCell.m */; };
+		6187F9FA1B81915700EFFB3A /* NIMSessionAudioContentView.m */ = {isa = PBXBuildFile; fileRef = 61FAB9641B7836B400355B95 /* NIMSessionAudioContentView.m */; };
+		6187F9FB1B81915700EFFB3A /* NIMSessionFileTransContentView.m */ = {isa = PBXBuildFile; fileRef = 61FAB9681B7836B400355B95 /* NIMSessionFileTransContentView.m */; };
+		6187F9FC1B81915700EFFB3A /* NIMSessionImageContentView.m */ = {isa = PBXBuildFile; fileRef = 61FAB96A1B7836B400355B95 /* NIMSessionImageContentView.m */; };
+		6187F9FD1B81915700EFFB3A /* NIMSessionLocationContentView.m */ = {isa = PBXBuildFile; fileRef = 61FAB96E1B7836B400355B95 /* NIMSessionLocationContentView.m */; };
+		6187F9FE1B81915700EFFB3A /* NIMSessionNetChatNotifyContentView.m */ = {isa = PBXBuildFile; fileRef = 61FAB9721B7836B400355B95 /* NIMSessionNetChatNotifyContentView.m */; };
+		6187F9FF1B81915700EFFB3A /* NIMSessionNotificationContentView.m */ = {isa = PBXBuildFile; fileRef = 61FAB9741B7836B400355B95 /* NIMSessionNotificationContentView.m */; };
+		6187FA001B81915700EFFB3A /* NIMSessionTextContentView.m */ = {isa = PBXBuildFile; fileRef = 61FAB9781B7836B400355B95 /* NIMSessionTextContentView.m */; };
+		6187FA011B81915700EFFB3A /* NIMSessionUnknowContentView.m */ = {isa = PBXBuildFile; fileRef = 61FAB97A1B7836B400355B95 /* NIMSessionUnknowContentView.m */; };
+		6187FA021B81915700EFFB3A /* NIMSessionVideoContentView.m */ = {isa = PBXBuildFile; fileRef = 61FAB97C1B7836B400355B95 /* NIMSessionVideoContentView.m */; };
+		6187FA041B81915700EFFB3A /* NIMCellLayoutDefaultConfig.m */ = {isa = PBXBuildFile; fileRef = 61F1B2A31B7B948B009097EC /* NIMCellLayoutDefaultConfig.m */; };
+		6187FA071B81915800EFFB3A /* NIMSessionMsgDatasource.m */ = {isa = PBXBuildFile; fileRef = 61DFDA711B764E9600DD5F2A /* NIMSessionMsgDatasource.m */; };
+		6187FA081B81915800EFFB3A /* NIMMessageCellMaker.m */ = {isa = PBXBuildFile; fileRef = 61F1B29C1B7B5B79009097EC /* NIMMessageCellMaker.m */; };
+		6187FA091B81915800EFFB3A /* NIMSessionViewLayoutManager.m */ = {isa = PBXBuildFile; fileRef = 6198A5DC1B7669D9001757B6 /* NIMSessionViewLayoutManager.m */; };
+		6187FA0A1B81915800EFFB3A /* NIMTimestampModel.m */ = {isa = PBXBuildFile; fileRef = 61DFDA731B764E9600DD5F2A /* NIMTimestampModel.m */; };
+		6187FA0B1B81915800EFFB3A /* NIMMessageMaker.m */ = {isa = PBXBuildFile; fileRef = 6114BBCB1B78FBA300D5AD02 /* NIMMessageMaker.m */; };
+		6187FA0C1B81915800EFFB3A /* NIMDefaultValueMaker.m */ = {isa = PBXBuildFile; fileRef = 613D35D51B7AF13B0078B09D /* NIMDefaultValueMaker.m */; };
+		6187FA0D1B81915800EFFB3A /* NIMSessionListViewController.m */ = {isa = PBXBuildFile; fileRef = E4EF074A1B7DB356006669AC /* NIMSessionListViewController.m */; };
+		6187FA0E1B81915800EFFB3A /* NIMSessionListDefaultConfig.m */ = {isa = PBXBuildFile; fileRef = 613D35C51B79EA7E0078B09D /* NIMSessionListDefaultConfig.m */; };
+		6187FA0F1B81915800EFFB3A /* NIMSessionListCell.m */ = {isa = PBXBuildFile; fileRef = 613D35C01B79E9480078B09D /* NIMSessionListCell.m */; };
+		6187FA111B81915800EFFB3A /* UIView+NIM.m */ = {isa = PBXBuildFile; fileRef = 615E0C0C1B76583000B404FB /* UIView+NIM.m */; };
+		6187FA121B81915800EFFB3A /* UIImage+NIM.m */ = {isa = PBXBuildFile; fileRef = 615E0C121B765A9F00B404FB /* UIImage+NIM.m */; };
+		6187FA131B81915800EFFB3A /* NSString+NIM.m */ = {isa = PBXBuildFile; fileRef = 6198A5D01B765E2A001757B6 /* NSString+NIM.m */; };
+		6187FA141B81915800EFFB3A /* NIMAttributedLabel+NIMKit.m */ = {isa = PBXBuildFile; fileRef = 61B1F7B31B7885040065FEFB /* NIMAttributedLabel+NIMKit.m */; };
+		61A2C8911BA6BFE2006304F9 /* NIMContactSelectViewController.m */ = {isa = PBXBuildFile; fileRef = 61A2C8901BA6BFE2006304F9 /* NIMContactSelectViewController.m */; };
+		61A2C8941BA6C2A1006304F9 /* NIMContactPickedView.m */ = {isa = PBXBuildFile; fileRef = 61A2C8931BA6C2A1006304F9 /* NIMContactPickedView.m */; };
+		61A2C8971BA6C8B9006304F9 /* NIMContactSelectConfig.m */ = {isa = PBXBuildFile; fileRef = 61A2C8961BA6C8B9006304F9 /* NIMContactSelectConfig.m */; };
+		61A2C8A91BA6D797006304F9 /* NIMGroupedDataCollection.m */ = {isa = PBXBuildFile; fileRef = 61A2C8A51BA6D797006304F9 /* NIMGroupedDataCollection.m */; };
+		61A2C8AA1BA6D797006304F9 /* NIMGroupedUsrInfo.m */ = {isa = PBXBuildFile; fileRef = 61A2C8A71BA6D797006304F9 /* NIMGroupedUsrInfo.m */; };
+		61A2C8B01BA6DC4F006304F9 /* NIMPinyinConverter.m */ = {isa = PBXBuildFile; fileRef = 61A2C8AD1BA6DC4F006304F9 /* NIMPinyinConverter.m */; };
+		61A2C8B11BA6DC4F006304F9 /* NIMSpellingCenter.m */ = {isa = PBXBuildFile; fileRef = 61A2C8AF1BA6DC4F006304F9 /* NIMSpellingCenter.m */; };
+		61BED5D71CE42BC4002E635C /* NIMKitDevice.m */ = {isa = PBXBuildFile; fileRef = 61BED5D61CE42BC4002E635C /* NIMKitDevice.m */; };
+		61D99FB11BAFF4770059D369 /* NIMCreateTeamAnnouncement.m */ = {isa = PBXBuildFile; fileRef = 61D99F9D1BAFF4770059D369 /* NIMCreateTeamAnnouncement.m */; };
+		61D99FB21BAFF4770059D369 /* NIMNormalTeamCardViewController.m */ = {isa = PBXBuildFile; fileRef = 61D99FA01BAFF4770059D369 /* NIMNormalTeamCardViewController.m */; };
+		61D99FB31BAFF4770059D369 /* NIMAdvancedTeamCardViewController.m */ = {isa = PBXBuildFile; fileRef = 61D99FA21BAFF4770059D369 /* NIMAdvancedTeamCardViewController.m */; };
+		61D99FB41BAFF4770059D369 /* NIMTeamAnnouncementListViewController.m */ = {isa = PBXBuildFile; fileRef = 61D99FA51BAFF4770059D369 /* NIMTeamAnnouncementListViewController.m */; };
+		61D99FB61BAFF4770059D369 /* NIMTeamMemberCardViewController.m */ = {isa = PBXBuildFile; fileRef = 61D99FAA1BAFF4770059D369 /* NIMTeamMemberCardViewController.m */; };
+		61D99FB71BAFF4770059D369 /* NIMTeamMemberListViewController.m */ = {isa = PBXBuildFile; fileRef = 61D99FAD1BAFF4770059D369 /* NIMTeamMemberListViewController.m */; };
+		61D99FC81BAFF48A0059D369 /* NIMAdvancedTeamMemberCell.m */ = {isa = PBXBuildFile; fileRef = 61D99FBC1BAFF48A0059D369 /* NIMAdvancedTeamMemberCell.m */; };
+		61D99FC91BAFF48A0059D369 /* NIMTeamAnnouncementListCell.m */ = {isa = PBXBuildFile; fileRef = 61D99FBE1BAFF48A0059D369 /* NIMTeamAnnouncementListCell.m */; };
+		61D99FCA1BAFF48A0059D369 /* NIMTeamCardHeaderCell.m */ = {isa = PBXBuildFile; fileRef = 61D99FC11BAFF48A0059D369 /* NIMTeamCardHeaderCell.m */; };
+		61D99FCB1BAFF48A0059D369 /* NIMTeamSwitchTableViewCell.m */ = {isa = PBXBuildFile; fileRef = 61D99FC31BAFF48A0059D369 /* NIMTeamSwitchTableViewCell.m */; };
+		61D99FCC1BAFF48A0059D369 /* NIMTimePickerView.m */ = {isa = PBXBuildFile; fileRef = 61D99FC61BAFF48A0059D369 /* NIMTimePickerView.m */; };
+		61D99FD91BAFF6190059D369 /* NIMCardMemberItem.m */ = {isa = PBXBuildFile; fileRef = 61D99FD01BAFF6190059D369 /* NIMCardMemberItem.m */; };
+		61D99FDA1BAFF6190059D369 /* NIMTeamCardOperationItem.m */ = {isa = PBXBuildFile; fileRef = 61D99FD21BAFF6190059D369 /* NIMTeamCardOperationItem.m */; };
+		61D99FDB1BAFF6190059D369 /* NIMTeamCardRowItem.m */ = {isa = PBXBuildFile; fileRef = 61D99FD41BAFF6190059D369 /* NIMTeamCardRowItem.m */; };
+		61D99FDC1BAFF6190059D369 /* NIMTeamInfoData.m */ = {isa = PBXBuildFile; fileRef = 61D99FD61BAFF6190059D369 /* NIMTeamInfoData.m */; };
+		61D99FDD1BAFF6190059D369 /* NIMUsrInfoData.m */ = {isa = PBXBuildFile; fileRef = 61D99FD81BAFF6190059D369 /* NIMUsrInfoData.m */; };
+		61D99FF21BAFFA760059D369 /* NIMIndefiniteAnimatedView.m */ = {isa = PBXBuildFile; fileRef = 61D99FE61BAFFA760059D369 /* NIMIndefiniteAnimatedView.m */; };
+		61D99FF31BAFFA760059D369 /* NIMProgressHUD.m */ = {isa = PBXBuildFile; fileRef = 61D99FE91BAFFA760059D369 /* NIMProgressHUD.m */; };
+		61D99FF51BAFFA760059D369 /* UIView+NIMKitToast.m */ = {isa = PBXBuildFile; fileRef = 61D99FF01BAFFA760059D369 /* UIView+NIMKitToast.m */; };
+		61D99FFB1BB008490059D369 /* NIMContactDataItem.m */ = {isa = PBXBuildFile; fileRef = 61D99FFA1BB008490059D369 /* NIMContactDataItem.m */; };
+		61E906021BCF4EBE006DBDA6 /* NIMMemberGroupView.m */ = {isa = PBXBuildFile; fileRef = 61E906011BCF4EBE006DBDA6 /* NIMMemberGroupView.m */; };
+		61F4E55F1CE1AF6F000AD2A9 /* NIMCommonTableData.m */ = {isa = PBXBuildFile; fileRef = 61F4E55C1CE1AF6F000AD2A9 /* NIMCommonTableData.m */; };
+		61F4E5601CE1AF6F000AD2A9 /* NIMCommonTableDelegate.m */ = {isa = PBXBuildFile; fileRef = 61F4E55E1CE1AF6F000AD2A9 /* NIMCommonTableDelegate.m */; };
+		61F4E5641CE1C40D000AD2A9 /* NIMTeamMemberCardHeaderCell.m */ = {isa = PBXBuildFile; fileRef = 61F4E5631CE1C40D000AD2A9 /* NIMTeamMemberCardHeaderCell.m */; };
+		61F4E5691CE1DBC0000AD2A9 /* NIMKitColorButtonCell.m */ = {isa = PBXBuildFile; fileRef = 61F4E5661CE1DBC0000AD2A9 /* NIMKitColorButtonCell.m */; };
+		61F4E56A1CE1DBC0000AD2A9 /* NIMKitSwitcherCell.m */ = {isa = PBXBuildFile; fileRef = 61F4E5681CE1DBC0000AD2A9 /* NIMKitSwitcherCell.m */; };
+		65A5475AAF8A7D62DB89CD55 /* libopus.a */ = {isa = PBXBuildFile; fileRef = F46748FF90B2FA5E7ECEEB43 /* libopus.a */; };
+		763B4EFC944D10E76F3654D6 /* libNIMSDK.a */ = {isa = PBXBuildFile; fileRef = 0715401BB8DD6F74F55A2EF4 /* libNIMSDK.a */; };
+		81D84AA3858EDD38A7BA6A0B /* libnvs.a */ = {isa = PBXBuildFile; fileRef = 4E10412C92732157C9A9A61E /* libnvs.a */; };
+		BD7E40859D4973FD666069BC /* libnts.a */ = {isa = PBXBuildFile; fileRef = 6EC24D549C147B07F35205D0 /* libnts.a */; };
+		C3D64A71A6DD9C58FCC2D63D /* libaacplus.a */ = {isa = PBXBuildFile; fileRef = 9BE34D23BC33E66FB30233CB /* libaacplus.a */; };
+		E465D3B01B84704C004F3A07 /* NIMUIConfig.m */ = {isa = PBXBuildFile; fileRef = E465D3AF1B84704C004F3A07 /* NIMUIConfig.m */; };
+		E479641E1CCDB95600A4534A /* NIMExtensionHelper.m */ = {isa = PBXBuildFile; fileRef = E479641D1CCDB95600A4534A /* NIMExtensionHelper.m */; };
+		E495442B805B78202E727F82 /* libNIMAVChat.a */ = {isa = PBXBuildFile; fileRef = 04B248C7ADCB7DB3B9C1D58E /* libNIMAVChat.a */; };
+		E4EA43471BA7E5E5003FC1BA /* NIMBaseSessionContentConfig.m */ = {isa = PBXBuildFile; fileRef = E4EA43461BA7E5E5003FC1BA /* NIMBaseSessionContentConfig.m */; };
+		E4EA434A1BA7EA20003FC1BA /* NIMUnsupportContentConfig.m */ = {isa = PBXBuildFile; fileRef = E4EA43491BA7EA20003FC1BA /* NIMUnsupportContentConfig.m */; };
+		E4EA434D1BA7EA72003FC1BA /* NIMTextContentConfig.m */ = {isa = PBXBuildFile; fileRef = E4EA434C1BA7EA72003FC1BA /* NIMTextContentConfig.m */; };
+		E4EA43501BA7EA7F003FC1BA /* NIMImageContentConfig.m */ = {isa = PBXBuildFile; fileRef = E4EA434F1BA7EA7F003FC1BA /* NIMImageContentConfig.m */; };
+		E4EA43531BA7EA96003FC1BA /* NIMAudioContentConfig.m */ = {isa = PBXBuildFile; fileRef = E4EA43521BA7EA96003FC1BA /* NIMAudioContentConfig.m */; };
+		E4EA43561BA7EAA3003FC1BA /* NIMVideoContentConfig.m */ = {isa = PBXBuildFile; fileRef = E4EA43551BA7EAA3003FC1BA /* NIMVideoContentConfig.m */; };
+		E4EA43591BA7EAB1003FC1BA /* NIMFileContentConfig.m */ = {isa = PBXBuildFile; fileRef = E4EA43581BA7EAB1003FC1BA /* NIMFileContentConfig.m */; };
+		E4EA435C1BA7EAC3003FC1BA /* NIMNotificationContentConfig.m */ = {isa = PBXBuildFile; fileRef = E4EA435B1BA7EAC3003FC1BA /* NIMNotificationContentConfig.m */; };
+		E4EA435F1BA7EAD8003FC1BA /* NIMLocationContentConfig.m */ = {isa = PBXBuildFile; fileRef = E4EA435E1BA7EAD8003FC1BA /* NIMLocationContentConfig.m */; };
+		E4EB3B1A1C55EB6300A47C41 /* NIMKit.m */ = {isa = PBXBuildFile; fileRef = E4EB3B191C55EB6300A47C41 /* NIMKit.m */; };
+		E7504936BC5E863360E50BC9 /* libssl.a */ = {isa = PBXBuildFile; fileRef = 69E646108E9DA26F358E3765 /* libssl.a */; };
+		FA57455BB3C8A9AE326B6530 /* libevent.a */ = {isa = PBXBuildFile; fileRef = D90A49ADAABEBEA07BB2C469 /* libevent.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6187F91D1B818ED800EFFB3A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04B248C7ADCB7DB3B9C1D58E /* libNIMAVChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNIMAVChat.a; path = ./NIMKit/Vendors/NIMAVChat/libNIMAVChat.a; sourceTree = SOURCE_ROOT; };
+		0715401BB8DD6F74F55A2EF4 /* libNIMSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNIMSDK.a; path = ./NIMKit/Vendors/NIMSDK/libNIMSDK.a; sourceTree = SOURCE_ROOT; };
+		0888417985B37079C14B9306 /* NIMMessageSearchOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMMessageSearchOption.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMMessageSearchOption.h; sourceTree = SOURCE_ROOT; };
+		09F144458C9FEA2C5A3506B8 /* NIMChatroomEnterRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMChatroomEnterRequest.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Chatroom/NIMChatroomEnterRequest.h; sourceTree = SOURCE_ROOT; };
+		0A324BB8AC06C97B0DC61D74 /* NIMSystemNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMSystemNotification.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMSystemNotification.h; sourceTree = SOURCE_ROOT; };
+		0B164093A90C6AC4CCE31051 /* NIMAVChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMAVChat.h; path = ./NIMKit/Vendors/NIMAVChat/ExportHeaders/NIMAVChat.h; sourceTree = SOURCE_ROOT; };
+		0D2A45BB81048FD00EBAC298 /* NIMChatroomUpdateRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMChatroomUpdateRequest.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Chatroom/NIMChatroomUpdateRequest.h; sourceTree = SOURCE_ROOT; };
+		0ED6400AA8D1AA8F57FB8856 /* NIMRTSRecordingInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMRTSRecordingInfo.h; path = ./NIMKit/Vendors/NIMAVChat/ExportHeaders/NIMRTSRecordingInfo.h; sourceTree = SOURCE_ROOT; };
+		129B44B7AEB141C4313847C1 /* NIMGlobalDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMGlobalDefs.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMGlobalDefs.h; sourceTree = SOURCE_ROOT; };
+		14CD4C55B5D7137DE65D9483 /* NIMNetCallNotificationContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMNetCallNotificationContent.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject/NotificationContent/NIMNetCallNotificationContent.h; sourceTree = SOURCE_ROOT; };
+		184F4C368E825E3FD68FC5C0 /* NIMCustomSystemNotificationSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMCustomSystemNotificationSetting.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMCustomSystemNotificationSetting.h; sourceTree = SOURCE_ROOT; };
+		22D64A779277128BA1C60C10 /* NIMVideoObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMVideoObject.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject/NIMVideoObject.h; sourceTree = SOURCE_ROOT; };
+		280D46D89B754A1E0BB7688B /* NIMChatroomMember.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMChatroomMember.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Chatroom/NIMChatroomMember.h; sourceTree = SOURCE_ROOT; };
+		383045D7B4B01D892377024E /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ./NIMKit/Vendors/NIMSDK/Libs/libcrypto.a; sourceTree = SOURCE_ROOT; };
+		3EC642ACAE40DDD24FF0085E /* NIMLoginManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMLoginManagerProtocol.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Protocol/NIMLoginManagerProtocol.h; sourceTree = SOURCE_ROOT; };
+		400D4E94B4F490B58C076172 /* NIMChatroomNotificationContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMChatroomNotificationContent.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject/NotificationContent/NIMChatroomNotificationContent.h; sourceTree = SOURCE_ROOT; };
+		41754EBAB7ED65D9B4A6D28A /* NIMPushNotificationSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMPushNotificationSetting.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMPushNotificationSetting.h; sourceTree = SOURCE_ROOT; };
+		434842F3ACA3341C457B8C83 /* NIMMessageChatroomExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMMessageChatroomExtension.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Chatroom/NIMMessageChatroomExtension.h; sourceTree = SOURCE_ROOT; };
+		45744C918C7D8EF21E214E17 /* NIMChatroom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMChatroom.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Chatroom/NIMChatroom.h; sourceTree = SOURCE_ROOT; };
+		47F34902915645C6BE0B7347 /* NIMSDKHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMSDKHeaders.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMSDKHeaders.h; sourceTree = SOURCE_ROOT; };
+		48CC4BB6A97C8BE3D6AC842F /* NIMResourceManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMResourceManagerProtocol.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Protocol/NIMResourceManagerProtocol.h; sourceTree = SOURCE_ROOT; };
+		4E10412C92732157C9A9A61E /* libnvs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnvs.a; path = ./NIMKit/Vendors/NIMAVChat/Libs/libnvs.a; sourceTree = SOURCE_ROOT; };
+		52414E708F5E54D6CAA35815 /* NIMChatManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMChatManagerProtocol.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Protocol/NIMChatManagerProtocol.h; sourceTree = SOURCE_ROOT; };
+		581C49CAB47E11074B56FB8B /* NIMMessageObjectProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMMessageObjectProtocol.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Protocol/NIMMessageObjectProtocol.h; sourceTree = SOURCE_ROOT; };
+		5AE849CABD5C61CF1B321CFE /* NIMFileObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMFileObject.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject/NIMFileObject.h; sourceTree = SOURCE_ROOT; };
+		5D0545B1B68A665E9D69606E /* NIMMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMMessage.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMMessage.h; sourceTree = SOURCE_ROOT; };
+		610D719F1D0E5A9C00FCE25A /* NIMKitNotificationFirer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMKitNotificationFirer.h; sourceTree = "<group>"; };
+		610D71A01D0E5A9C00FCE25A /* NIMKitNotificationFirer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMKitNotificationFirer.m; sourceTree = "<group>"; };
+		6110D8AD1C24001300805BA4 /* UITableView+NIMScrollToBottom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+NIMScrollToBottom.h"; sourceTree = "<group>"; };
+		6110D8AE1C24001300805BA4 /* UITableView+NIMScrollToBottom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+NIMScrollToBottom.m"; sourceTree = "<group>"; };
+		6114BBC61B78F7C100D5AD02 /* NIMCustomLeftBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMCustomLeftBarView.h; sourceTree = "<group>"; };
+		6114BBC71B78F7C100D5AD02 /* NIMCustomLeftBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMCustomLeftBarView.m; sourceTree = "<group>"; };
+		6114BBCA1B78FBA300D5AD02 /* NIMMessageMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMMessageMaker.h; sourceTree = "<group>"; };
+		6114BBCB1B78FBA300D5AD02 /* NIMMessageMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMMessageMaker.m; sourceTree = "<group>"; };
+		611B65D81BA8591700038641 /* NIMContactSelectTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMContactSelectTabView.h; sourceTree = "<group>"; };
+		611B65D91BA8591700038641 /* NIMContactSelectTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMContactSelectTabView.m; sourceTree = "<group>"; };
+		612FA94F1C1EACB3008956C9 /* NIMInputBarItemType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NIMInputBarItemType.h; sourceTree = "<group>"; };
+		6132C70F1BA7C47C00897DDB /* NIMContactDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMContactDataCell.h; sourceTree = "<group>"; };
+		6132C7101BA7C47C00897DDB /* NIMContactDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMContactDataCell.m; sourceTree = "<group>"; };
+		6132C7131BA7C47C00897DDB /* NIMContactDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMContactDefines.h; sourceTree = "<group>"; };
+		613D35BF1B79E9480078B09D /* NIMSessionListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionListCell.h; sourceTree = "<group>"; };
+		613D35C01B79E9480078B09D /* NIMSessionListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSessionListCell.m; sourceTree = "<group>"; };
+		613D35C41B79EA7E0078B09D /* NIMSessionListDefaultConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionListDefaultConfig.h; sourceTree = "<group>"; };
+		613D35C51B79EA7E0078B09D /* NIMSessionListDefaultConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSessionListDefaultConfig.m; sourceTree = "<group>"; };
+		613D35D41B7AF13B0078B09D /* NIMDefaultValueMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMDefaultValueMaker.h; sourceTree = "<group>"; };
+		613D35D51B7AF13B0078B09D /* NIMDefaultValueMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMDefaultValueMaker.m; sourceTree = "<group>"; };
+		614B71161B78A34700F02B1B /* NIMSessionTimestampCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionTimestampCell.h; sourceTree = "<group>"; };
+		614B71171B78A34700F02B1B /* NIMSessionTimestampCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSessionTimestampCell.m; sourceTree = "<group>"; };
+		614B711C1B78C22E00F02B1B /* NIMInputToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMInputToolBar.h; sourceTree = "<group>"; };
+		614B711D1B78C22E00F02B1B /* NIMInputToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMInputToolBar.m; sourceTree = "<group>"; };
+		614B8E331C5209940091BF28 /* NIMTipContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMTipContentConfig.h; sourceTree = "<group>"; };
+		614B8E341C5209940091BF28 /* NIMTipContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMTipContentConfig.m; sourceTree = "<group>"; };
+		6157802C1B8F246F00C441F2 /* NIMKitTimerHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMKitTimerHolder.h; sourceTree = "<group>"; };
+		6157802D1B8F246F00C441F2 /* NIMKitTimerHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMKitTimerHolder.m; sourceTree = "<group>"; };
+		61592B7D1B7E05E300BC38C0 /* NIMKitEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMKitEvent.h; sourceTree = "<group>"; };
+		61592B7E1B7E05E300BC38C0 /* NIMKitEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMKitEvent.m; sourceTree = "<group>"; };
+		615BD0F11B85A6A2000F174B /* NIMLoadProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMLoadProgressView.h; sourceTree = "<group>"; };
+		615BD0F21B85A6A2000F174B /* NIMLoadProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMLoadProgressView.m; sourceTree = "<group>"; };
+		615E0C081B76573200B404FB /* NIMInputEmoticonContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMInputEmoticonContainerView.h; sourceTree = "<group>"; };
+		615E0C091B76573200B404FB /* NIMInputEmoticonContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMInputEmoticonContainerView.m; sourceTree = "<group>"; };
+		615E0C0B1B76583000B404FB /* UIView+NIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NIM.h"; sourceTree = "<group>"; };
+		615E0C0C1B76583000B404FB /* UIView+NIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NIM.m"; sourceTree = "<group>"; };
+		615E0C0E1B7659BB00B404FB /* NIMInputEmoticonButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMInputEmoticonButton.h; sourceTree = "<group>"; };
+		615E0C0F1B7659BB00B404FB /* NIMInputEmoticonButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMInputEmoticonButton.m; sourceTree = "<group>"; };
+		615E0C111B765A9F00B404FB /* UIImage+NIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NIM.h"; sourceTree = "<group>"; };
+		615E0C121B765A9F00B404FB /* UIImage+NIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NIM.m"; sourceTree = "<group>"; };
+		615E0C141B765B3200B404FB /* NIMInputEmoticonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NIMInputEmoticonDefine.h; sourceTree = "<group>"; };
+		615E0C151B765C5B00B404FB /* NIMInputEmoticonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMInputEmoticonManager.h; sourceTree = "<group>"; };
+		615E0C161B765C5B00B404FB /* NIMInputEmoticonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMInputEmoticonManager.m; sourceTree = "<group>"; };
+		6187F91F1B818ED800EFFB3A /* libNIMKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNIMKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6191674B1B7788D300B5A31C /* NIMMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMMessageCell.h; sourceTree = "<group>"; };
+		6191674C1B7788D300B5A31C /* NIMMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMMessageCell.m; sourceTree = "<group>"; };
+		6198A5CF1B765E2A001757B6 /* NSString+NIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NIM.h"; sourceTree = "<group>"; };
+		6198A5D01B765E2A001757B6 /* NSString+NIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NIM.m"; sourceTree = "<group>"; };
+		6198A5D41B766494001757B6 /* NIMInputEmoticonTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMInputEmoticonTabView.h; sourceTree = "<group>"; };
+		6198A5D51B766494001757B6 /* NIMInputEmoticonTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMInputEmoticonTabView.m; sourceTree = "<group>"; };
+		6198A5DB1B7669D9001757B6 /* NIMSessionViewLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionViewLayoutManager.h; sourceTree = "<group>"; };
+		6198A5DC1B7669D9001757B6 /* NIMSessionViewLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSessionViewLayoutManager.m; sourceTree = "<group>"; };
+		6198A5E91B7712FA001757B6 /* NIMInputAudioRecordIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMInputAudioRecordIndicatorView.h; sourceTree = "<group>"; };
+		6198A5EA1B7712FA001757B6 /* NIMInputAudioRecordIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMInputAudioRecordIndicatorView.m; sourceTree = "<group>"; };
+		619AF5BF1B788E5E0073623F /* NIMAvatarImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMAvatarImageView.h; sourceTree = "<group>"; };
+		619AF5C01B788E5E0073623F /* NIMAvatarImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMAvatarImageView.m; sourceTree = "<group>"; };
+		61A2C88F1BA6BFE2006304F9 /* NIMContactSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMContactSelectViewController.h; sourceTree = "<group>"; };
+		61A2C8901BA6BFE2006304F9 /* NIMContactSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMContactSelectViewController.m; sourceTree = "<group>"; };
+		61A2C8921BA6C2A1006304F9 /* NIMContactPickedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMContactPickedView.h; sourceTree = "<group>"; };
+		61A2C8931BA6C2A1006304F9 /* NIMContactPickedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMContactPickedView.m; sourceTree = "<group>"; };
+		61A2C8951BA6C8B9006304F9 /* NIMContactSelectConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMContactSelectConfig.h; sourceTree = "<group>"; };
+		61A2C8961BA6C8B9006304F9 /* NIMContactSelectConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMContactSelectConfig.m; sourceTree = "<group>"; };
+		61A2C8A41BA6D797006304F9 /* NIMGroupedDataCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMGroupedDataCollection.h; sourceTree = "<group>"; };
+		61A2C8A51BA6D797006304F9 /* NIMGroupedDataCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMGroupedDataCollection.m; sourceTree = "<group>"; };
+		61A2C8A61BA6D797006304F9 /* NIMGroupedUsrInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMGroupedUsrInfo.h; sourceTree = "<group>"; };
+		61A2C8A71BA6D797006304F9 /* NIMGroupedUsrInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMGroupedUsrInfo.m; sourceTree = "<group>"; };
+		61A2C8AC1BA6DC4F006304F9 /* NIMPinyinConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMPinyinConverter.h; sourceTree = "<group>"; };
+		61A2C8AD1BA6DC4F006304F9 /* NIMPinyinConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMPinyinConverter.m; sourceTree = "<group>"; };
+		61A2C8AE1BA6DC4F006304F9 /* NIMSpellingCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSpellingCenter.h; sourceTree = "<group>"; };
+		61A2C8AF1BA6DC4F006304F9 /* NIMSpellingCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSpellingCenter.m; sourceTree = "<group>"; };
+		61B1F7A21B7866160065FEFB /* NIMKitUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMKitUtil.h; sourceTree = "<group>"; };
+		61B1F7A31B7866160065FEFB /* NIMKitUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMKitUtil.m; sourceTree = "<group>"; };
+		61B1F7B21B7885040065FEFB /* NIMAttributedLabel+NIMKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NIMAttributedLabel+NIMKit.h"; sourceTree = "<group>"; };
+		61B1F7B31B7885040065FEFB /* NIMAttributedLabel+NIMKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NIMAttributedLabel+NIMKit.m"; sourceTree = "<group>"; };
+		61B1F7B61B7885B50065FEFB /* NIMInputEmoticonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMInputEmoticonParser.h; sourceTree = "<group>"; };
+		61B1F7B71B7885B50065FEFB /* NIMInputEmoticonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMInputEmoticonParser.m; sourceTree = "<group>"; };
+		61BED5D51CE42BC4002E635C /* NIMKitDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMKitDevice.h; sourceTree = "<group>"; };
+		61BED5D61CE42BC4002E635C /* NIMKitDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMKitDevice.m; sourceTree = "<group>"; };
+		61D99F9C1BAFF4770059D369 /* NIMCreateTeamAnnouncement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMCreateTeamAnnouncement.h; sourceTree = "<group>"; };
+		61D99F9D1BAFF4770059D369 /* NIMCreateTeamAnnouncement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMCreateTeamAnnouncement.m; sourceTree = "<group>"; };
+		61D99F9F1BAFF4770059D369 /* NIMNormalTeamCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMNormalTeamCardViewController.h; sourceTree = "<group>"; };
+		61D99FA01BAFF4770059D369 /* NIMNormalTeamCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMNormalTeamCardViewController.m; sourceTree = "<group>"; };
+		61D99FA11BAFF4770059D369 /* NIMAdvancedTeamCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMAdvancedTeamCardViewController.h; sourceTree = "<group>"; };
+		61D99FA21BAFF4770059D369 /* NIMAdvancedTeamCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMAdvancedTeamCardViewController.m; sourceTree = "<group>"; };
+		61D99FA41BAFF4770059D369 /* NIMTeamAnnouncementListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMTeamAnnouncementListViewController.h; sourceTree = "<group>"; };
+		61D99FA51BAFF4770059D369 /* NIMTeamAnnouncementListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMTeamAnnouncementListViewController.m; sourceTree = "<group>"; };
+		61D99FA91BAFF4770059D369 /* NIMTeamMemberCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMTeamMemberCardViewController.h; sourceTree = "<group>"; };
+		61D99FAA1BAFF4770059D369 /* NIMTeamMemberCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMTeamMemberCardViewController.m; sourceTree = "<group>"; };
+		61D99FAC1BAFF4770059D369 /* NIMTeamMemberListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMTeamMemberListViewController.h; sourceTree = "<group>"; };
+		61D99FAD1BAFF4770059D369 /* NIMTeamMemberListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMTeamMemberListViewController.m; sourceTree = "<group>"; };
+		61D99FBB1BAFF48A0059D369 /* NIMAdvancedTeamMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMAdvancedTeamMemberCell.h; sourceTree = "<group>"; };
+		61D99FBC1BAFF48A0059D369 /* NIMAdvancedTeamMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMAdvancedTeamMemberCell.m; sourceTree = "<group>"; };
+		61D99FBD1BAFF48A0059D369 /* NIMTeamAnnouncementListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMTeamAnnouncementListCell.h; sourceTree = "<group>"; };
+		61D99FBE1BAFF48A0059D369 /* NIMTeamAnnouncementListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMTeamAnnouncementListCell.m; sourceTree = "<group>"; };
+		61D99FC01BAFF48A0059D369 /* NIMTeamCardHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMTeamCardHeaderCell.h; sourceTree = "<group>"; };
+		61D99FC11BAFF48A0059D369 /* NIMTeamCardHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMTeamCardHeaderCell.m; sourceTree = "<group>"; };
+		61D99FC21BAFF48A0059D369 /* NIMTeamSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMTeamSwitchTableViewCell.h; sourceTree = "<group>"; };
+		61D99FC31BAFF48A0059D369 /* NIMTeamSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMTeamSwitchTableViewCell.m; sourceTree = "<group>"; };
+		61D99FC51BAFF48A0059D369 /* NIMTimePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMTimePickerView.h; sourceTree = "<group>"; };
+		61D99FC61BAFF48A0059D369 /* NIMTimePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMTimePickerView.m; sourceTree = "<group>"; };
+		61D99FCE1BAFF6190059D369 /* NIMCardDataSourceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMCardDataSourceProtocol.h; sourceTree = "<group>"; };
+		61D99FCF1BAFF6190059D369 /* NIMCardMemberItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMCardMemberItem.h; sourceTree = "<group>"; };
+		61D99FD01BAFF6190059D369 /* NIMCardMemberItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMCardMemberItem.m; sourceTree = "<group>"; };
+		61D99FD11BAFF6190059D369 /* NIMTeamCardOperationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMTeamCardOperationItem.h; sourceTree = "<group>"; };
+		61D99FD21BAFF6190059D369 /* NIMTeamCardOperationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMTeamCardOperationItem.m; sourceTree = "<group>"; };
+		61D99FD31BAFF6190059D369 /* NIMTeamCardRowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMTeamCardRowItem.h; sourceTree = "<group>"; };
+		61D99FD41BAFF6190059D369 /* NIMTeamCardRowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMTeamCardRowItem.m; sourceTree = "<group>"; };
+		61D99FD51BAFF6190059D369 /* NIMTeamInfoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMTeamInfoData.h; sourceTree = "<group>"; };
+		61D99FD61BAFF6190059D369 /* NIMTeamInfoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMTeamInfoData.m; sourceTree = "<group>"; };
+		61D99FD71BAFF6190059D369 /* NIMUsrInfoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMUsrInfoData.h; sourceTree = "<group>"; };
+		61D99FD81BAFF6190059D369 /* NIMUsrInfoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMUsrInfoData.m; sourceTree = "<group>"; };
+		61D99FE51BAFFA760059D369 /* NIMIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		61D99FE61BAFFA760059D369 /* NIMIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		61D99FE81BAFFA760059D369 /* NIMProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMProgressHUD.h; sourceTree = "<group>"; };
+		61D99FE91BAFFA760059D369 /* NIMProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMProgressHUD.m; sourceTree = "<group>"; };
+		61D99FEF1BAFFA760059D369 /* UIView+NIMKitToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NIMKitToast.h"; sourceTree = "<group>"; };
+		61D99FF01BAFFA760059D369 /* UIView+NIMKitToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NIMKitToast.m"; sourceTree = "<group>"; };
+		61D99FF91BB008490059D369 /* NIMContactDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMContactDataItem.h; sourceTree = "<group>"; };
+		61D99FFA1BB008490059D369 /* NIMContactDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMContactDataItem.m; sourceTree = "<group>"; };
+		61DFDA671B764E9600DD5F2A /* NIMInputMoreContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMInputMoreContainerView.h; sourceTree = "<group>"; };
+		61DFDA681B764E9600DD5F2A /* NIMInputMoreContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMInputMoreContainerView.m; sourceTree = "<group>"; };
+		61DFDA691B764E9600DD5F2A /* NIMInputTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMInputTextView.h; sourceTree = "<group>"; };
+		61DFDA6A1B764E9600DD5F2A /* NIMInputTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMInputTextView.m; sourceTree = "<group>"; };
+		61DFDA6B1B764E9600DD5F2A /* NIMInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMInputView.h; sourceTree = "<group>"; };
+		61DFDA6C1B764E9600DD5F2A /* NIMInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMInputView.m; sourceTree = "<group>"; };
+		61DFDA701B764E9600DD5F2A /* NIMSessionMsgDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionMsgDatasource.h; sourceTree = "<group>"; };
+		61DFDA711B764E9600DD5F2A /* NIMSessionMsgDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSessionMsgDatasource.m; sourceTree = "<group>"; };
+		61DFDA721B764E9600DD5F2A /* NIMTimestampModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMTimestampModel.h; sourceTree = "<group>"; };
+		61DFDA731B764E9600DD5F2A /* NIMTimestampModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMTimestampModel.m; sourceTree = "<group>"; };
+		61DFDA7E1B764FAE00DD5F2A /* NIMPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMPageView.h; sourceTree = "<group>"; };
+		61DFDA7F1B764FAE00DD5F2A /* NIMPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMPageView.m; sourceTree = "<group>"; };
+		61E906001BCF4EBE006DBDA6 /* NIMMemberGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMMemberGroupView.h; sourceTree = "<group>"; };
+		61E906011BCF4EBE006DBDA6 /* NIMMemberGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMMemberGroupView.m; sourceTree = "<group>"; };
+		61F1B29B1B7B5B79009097EC /* NIMMessageCellMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMMessageCellMaker.h; sourceTree = "<group>"; };
+		61F1B29C1B7B5B79009097EC /* NIMMessageCellMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMMessageCellMaker.m; sourceTree = "<group>"; };
+		61F1B2A21B7B948B009097EC /* NIMCellLayoutDefaultConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMCellLayoutDefaultConfig.h; sourceTree = "<group>"; };
+		61F1B2A31B7B948B009097EC /* NIMCellLayoutDefaultConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMCellLayoutDefaultConfig.m; sourceTree = "<group>"; };
+		61F4E55B1CE1AF6F000AD2A9 /* NIMCommonTableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMCommonTableData.h; sourceTree = "<group>"; };
+		61F4E55C1CE1AF6F000AD2A9 /* NIMCommonTableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMCommonTableData.m; sourceTree = "<group>"; };
+		61F4E55D1CE1AF6F000AD2A9 /* NIMCommonTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMCommonTableDelegate.h; sourceTree = "<group>"; };
+		61F4E55E1CE1AF6F000AD2A9 /* NIMCommonTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMCommonTableDelegate.m; sourceTree = "<group>"; };
+		61F4E5611CE1B8D4000AD2A9 /* NIMCommonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMCommonTableViewCell.h; sourceTree = "<group>"; };
+		61F4E5621CE1C40D000AD2A9 /* NIMTeamMemberCardHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMTeamMemberCardHeaderCell.h; sourceTree = "<group>"; };
+		61F4E5631CE1C40D000AD2A9 /* NIMTeamMemberCardHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMTeamMemberCardHeaderCell.m; sourceTree = "<group>"; };
+		61F4E5651CE1DBC0000AD2A9 /* NIMKitColorButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMKitColorButtonCell.h; sourceTree = "<group>"; };
+		61F4E5661CE1DBC0000AD2A9 /* NIMKitColorButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMKitColorButtonCell.m; sourceTree = "<group>"; };
+		61F4E5671CE1DBC0000AD2A9 /* NIMKitSwitcherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMKitSwitcherCell.h; sourceTree = "<group>"; };
+		61F4E5681CE1DBC0000AD2A9 /* NIMKitSwitcherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMKitSwitcherCell.m; sourceTree = "<group>"; };
+		61FAB9631B7836B400355B95 /* NIMSessionAudioContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionAudioContentView.h; sourceTree = "<group>"; };
+		61FAB9641B7836B400355B95 /* NIMSessionAudioContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSessionAudioContentView.m; sourceTree = "<group>"; };
+		61FAB9671B7836B400355B95 /* NIMSessionFileTransContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionFileTransContentView.h; sourceTree = "<group>"; };
+		61FAB9681B7836B400355B95 /* NIMSessionFileTransContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSessionFileTransContentView.m; sourceTree = "<group>"; };
+		61FAB9691B7836B400355B95 /* NIMSessionImageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionImageContentView.h; sourceTree = "<group>"; };
+		61FAB96A1B7836B400355B95 /* NIMSessionImageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSessionImageContentView.m; sourceTree = "<group>"; };
+		61FAB96D1B7836B400355B95 /* NIMSessionLocationContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionLocationContentView.h; sourceTree = "<group>"; };
+		61FAB96E1B7836B400355B95 /* NIMSessionLocationContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSessionLocationContentView.m; sourceTree = "<group>"; };
+		61FAB9711B7836B400355B95 /* NIMSessionNetChatNotifyContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionNetChatNotifyContentView.h; sourceTree = "<group>"; };
+		61FAB9721B7836B400355B95 /* NIMSessionNetChatNotifyContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSessionNetChatNotifyContentView.m; sourceTree = "<group>"; };
+		61FAB9731B7836B400355B95 /* NIMSessionNotificationContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionNotificationContentView.h; sourceTree = "<group>"; };
+		61FAB9741B7836B400355B95 /* NIMSessionNotificationContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSessionNotificationContentView.m; sourceTree = "<group>"; };
+		61FAB9771B7836B400355B95 /* NIMSessionTextContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionTextContentView.h; sourceTree = "<group>"; };
+		61FAB9781B7836B400355B95 /* NIMSessionTextContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSessionTextContentView.m; sourceTree = "<group>"; };
+		61FAB9791B7836B400355B95 /* NIMSessionUnknowContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionUnknowContentView.h; sourceTree = "<group>"; };
+		61FAB97A1B7836B400355B95 /* NIMSessionUnknowContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSessionUnknowContentView.m; sourceTree = "<group>"; };
+		61FAB97B1B7836B400355B95 /* NIMSessionVideoContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionVideoContentView.h; sourceTree = "<group>"; };
+		61FAB97C1B7836B400355B95 /* NIMSessionVideoContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSessionVideoContentView.m; sourceTree = "<group>"; };
+		62374AD7984C1302ED11BBA6 /* NIMSystemNotificationManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMSystemNotificationManagerProtocol.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Protocol/NIMSystemNotificationManagerProtocol.h; sourceTree = SOURCE_ROOT; };
+		69E646108E9DA26F358E3765 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ./NIMKit/Vendors/NIMSDK/Libs/libssl.a; sourceTree = SOURCE_ROOT; };
+		6A7A47B999F33A27EFE5BC6E /* NIMNetCallRecordingInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMNetCallRecordingInfo.h; path = ./NIMKit/Vendors/NIMAVChat/ExportHeaders/NIMNetCallRecordingInfo.h; sourceTree = SOURCE_ROOT; };
+		6EC24D549C147B07F35205D0 /* libnts.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnts.a; path = ./NIMKit/Vendors/NIMAVChat/Libs/libnts.a; sourceTree = SOURCE_ROOT; };
+		70A942D1BB9FE4BB40F7D169 /* NIMNetCallOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMNetCallOption.h; path = ./NIMKit/Vendors/NIMAVChat/ExportHeaders/NIMNetCallOption.h; sourceTree = SOURCE_ROOT; };
+		713D48799D0A613B5B1E946E /* NIMChatroomQueueRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMChatroomQueueRequest.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Chatroom/NIMChatroomQueueRequest.h; sourceTree = SOURCE_ROOT; };
+		718C4D45A786437C8B3E4D29 /* NIMTeamMember.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMTeamMember.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Team/NIMTeamMember.h; sourceTree = SOURCE_ROOT; };
+		71D846E2A036CAB467ED1389 /* NIMNetCallUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMNetCallUserInfo.h; path = ./NIMKit/Vendors/NIMAVChat/ExportHeaders/NIMNetCallUserInfo.h; sourceTree = SOURCE_ROOT; };
+		71FA4CE0835E99F2BCF73F0B /* NIMNotificationContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMNotificationContent.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject/NotificationContent/NIMNotificationContent.h; sourceTree = SOURCE_ROOT; };
+		79924ABF9B2A6277130F77B4 /* NIMMediaManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMMediaManagerProtocol.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Protocol/NIMMediaManagerProtocol.h; sourceTree = SOURCE_ROOT; };
+		7BA94F0B9C81BAA5F25C95C8 /* NIMAudioObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMAudioObject.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject/NIMAudioObject.h; sourceTree = SOURCE_ROOT; };
+		8EE746EEA17BFA9CAEB05F47 /* NIMRTSOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMRTSOption.h; path = ./NIMKit/Vendors/NIMAVChat/ExportHeaders/NIMRTSOption.h; sourceTree = SOURCE_ROOT; };
+		93DA4D93BF1F3A86AAA609E7 /* NIMMessageApnsMemberOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMMessageApnsMemberOption.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMMessageApnsMemberOption.h; sourceTree = SOURCE_ROOT; };
+		9481481F83A78BF358FFF282 /* NIMTeamNotificationContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMTeamNotificationContent.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject/NotificationContent/NIMTeamNotificationContent.h; sourceTree = SOURCE_ROOT; };
+		964840E8918FB6B65DB9310D /* NIMSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMSDK.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMSDK.h; sourceTree = SOURCE_ROOT; };
+		9BE34D23BC33E66FB30233CB /* libaacplus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaacplus.a; path = ./NIMKit/Vendors/NIMSDK/Libs/libaacplus.a; sourceTree = SOURCE_ROOT; };
+		9EAD4B38B9179F330C581915 /* NIMSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMSession.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMSession.h; sourceTree = SOURCE_ROOT; };
+		A3BF47899CE4DF6D02EBE16F /* NIMMessageReceipt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMMessageReceipt.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMMessageReceipt.h; sourceTree = SOURCE_ROOT; };
+		A7544378BA5B2F18BDCC0227 /* libopenh264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopenh264.a; path = ./NIMKit/Vendors/NIMAVChat/Libs/libopenh264.a; sourceTree = SOURCE_ROOT; };
+		A8B148EDB34AAE2728E382F3 /* libnio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnio.a; path = ./NIMKit/Vendors/NIMAVChat/Libs/libnio.a; sourceTree = SOURCE_ROOT; };
+		AD5A4ADFBC811FAF4A11A7E6 /* NIMLoginClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMLoginClient.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMLoginClient.h; sourceTree = SOURCE_ROOT; };
+		AE924930A1E9491D30A7141B /* NIMNetCallDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMNetCallDefs.h; path = ./NIMKit/Vendors/NIMAVChat/ExportHeaders/NIMNetCallDefs.h; sourceTree = SOURCE_ROOT; };
+		B51347C3B56BAF355783AD50 /* NIMSDKConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMSDKConfig.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMSDKConfig.h; sourceTree = SOURCE_ROOT; };
+		B6D84BEBA27D73188975FCC8 /* NIMRTSManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMRTSManagerProtocol.h; path = ./NIMKit/Vendors/NIMAVChat/ExportHeaders/NIMRTSManagerProtocol.h; sourceTree = SOURCE_ROOT; };
+		B95F4C19843BF3070CB86EBE /* NIMChatroomManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMChatroomManagerProtocol.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Protocol/NIMChatroomManagerProtocol.h; sourceTree = SOURCE_ROOT; };
+		BCCF461296C7FF77F4BEC0E3 /* NIMNetCallMeeting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMNetCallMeeting.h; path = ./NIMKit/Vendors/NIMAVChat/ExportHeaders/NIMNetCallMeeting.h; sourceTree = SOURCE_ROOT; };
+		C06F4E08A120695D0A67AB22 /* NIMRecentSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMRecentSession.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMRecentSession.h; sourceTree = SOURCE_ROOT; };
+		C8BA4CE28D7B89EAAC829CAA /* NIMAntiSpamOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMAntiSpamOption.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMAntiSpamOption.h; sourceTree = SOURCE_ROOT; };
+		CDE84924A773C0D010E9E72D /* NIMApnsManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMApnsManagerProtocol.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Protocol/NIMApnsManagerProtocol.h; sourceTree = SOURCE_ROOT; };
+		CE7B43E1A44A68D4ACD52E42 /* NIMNetCallManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMNetCallManagerProtocol.h; path = ./NIMKit/Vendors/NIMAVChat/ExportHeaders/NIMNetCallManagerProtocol.h; sourceTree = SOURCE_ROOT; };
+		D3894F36B8F98F991F2600CA /* NIMImageObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMImageObject.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject/NIMImageObject.h; sourceTree = SOURCE_ROOT; };
+		D7F746A49B31F542DAA91A1E /* NIMCustomObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMCustomObject.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject/NIMCustomObject.h; sourceTree = SOURCE_ROOT; };
+		D90A49ADAABEBEA07BB2C469 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent.a; path = ./NIMKit/Vendors/NIMSDK/Libs/libevent.a; sourceTree = SOURCE_ROOT; };
+		DD9647EABC5CDC387A0B5D63 /* NIMUnsupportedNotificationContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMUnsupportedNotificationContent.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject/NotificationContent/NIMUnsupportedNotificationContent.h; sourceTree = SOURCE_ROOT; };
+		E170431B99DE1C71377D46F9 /* NIMConversationManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMConversationManagerProtocol.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Protocol/NIMConversationManagerProtocol.h; sourceTree = SOURCE_ROOT; };
+		E3324664BC39CB97B65C8A03 /* NIMMessageSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMMessageSetting.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMMessageSetting.h; sourceTree = SOURCE_ROOT; };
+		E43643D79A893708BAAA7706 /* NIMTeamManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMTeamManagerProtocol.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Protocol/NIMTeamManagerProtocol.h; sourceTree = SOURCE_ROOT; };
+		E465D3AE1B84704C004F3A07 /* NIMUIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMUIConfig.h; sourceTree = "<group>"; };
+		E465D3AF1B84704C004F3A07 /* NIMUIConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMUIConfig.m; sourceTree = "<group>"; };
+		E479641C1CCDB95600A4534A /* NIMExtensionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMExtensionHelper.h; sourceTree = "<group>"; };
+		E479641D1CCDB95600A4534A /* NIMExtensionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMExtensionHelper.m; sourceTree = "<group>"; };
+		E4EA43451BA7E5E5003FC1BA /* NIMBaseSessionContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMBaseSessionContentConfig.h; sourceTree = "<group>"; };
+		E4EA43461BA7E5E5003FC1BA /* NIMBaseSessionContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMBaseSessionContentConfig.m; sourceTree = "<group>"; };
+		E4EA43481BA7EA20003FC1BA /* NIMUnsupportContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMUnsupportContentConfig.h; sourceTree = "<group>"; };
+		E4EA43491BA7EA20003FC1BA /* NIMUnsupportContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMUnsupportContentConfig.m; sourceTree = "<group>"; };
+		E4EA434B1BA7EA72003FC1BA /* NIMTextContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMTextContentConfig.h; sourceTree = "<group>"; };
+		E4EA434C1BA7EA72003FC1BA /* NIMTextContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMTextContentConfig.m; sourceTree = "<group>"; };
+		E4EA434E1BA7EA7F003FC1BA /* NIMImageContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMImageContentConfig.h; sourceTree = "<group>"; };
+		E4EA434F1BA7EA7F003FC1BA /* NIMImageContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMImageContentConfig.m; sourceTree = "<group>"; };
+		E4EA43511BA7EA96003FC1BA /* NIMAudioContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMAudioContentConfig.h; sourceTree = "<group>"; };
+		E4EA43521BA7EA96003FC1BA /* NIMAudioContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMAudioContentConfig.m; sourceTree = "<group>"; };
+		E4EA43541BA7EAA3003FC1BA /* NIMVideoContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMVideoContentConfig.h; sourceTree = "<group>"; };
+		E4EA43551BA7EAA3003FC1BA /* NIMVideoContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMVideoContentConfig.m; sourceTree = "<group>"; };
+		E4EA43571BA7EAB1003FC1BA /* NIMFileContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMFileContentConfig.h; sourceTree = "<group>"; };
+		E4EA43581BA7EAB1003FC1BA /* NIMFileContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMFileContentConfig.m; sourceTree = "<group>"; };
+		E4EA435A1BA7EAC3003FC1BA /* NIMNotificationContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMNotificationContentConfig.h; sourceTree = "<group>"; };
+		E4EA435B1BA7EAC3003FC1BA /* NIMNotificationContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMNotificationContentConfig.m; sourceTree = "<group>"; };
+		E4EA435D1BA7EAD8003FC1BA /* NIMLocationContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMLocationContentConfig.h; sourceTree = "<group>"; };
+		E4EA435E1BA7EAD8003FC1BA /* NIMLocationContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMLocationContentConfig.m; sourceTree = "<group>"; };
+		E4EB3B181C55EB6300A47C41 /* NIMKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMKit.h; sourceTree = "<group>"; };
+		E4EB3B191C55EB6300A47C41 /* NIMKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMKit.m; sourceTree = "<group>"; };
+		E4EB3B1C1C55EB6B00A47C41 /* NIMGlobalMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMGlobalMacro.h; sourceTree = "<group>"; };
+		E4EB3B1D1C55EB7A00A47C41 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4EF06E01B7DAFCA006669AC /* NIMAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMAttributedLabel.h; sourceTree = "<group>"; };
+		E4EF06E11B7DAFCA006669AC /* NIMAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMAttributedLabel.m; sourceTree = "<group>"; };
+		E4EF06E21B7DAFCA006669AC /* NIMAttributedLabelAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMAttributedLabelAttachment.h; sourceTree = "<group>"; };
+		E4EF06E31B7DAFCA006669AC /* NIMAttributedLabelAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMAttributedLabelAttachment.m; sourceTree = "<group>"; };
+		E4EF06E41B7DAFCA006669AC /* NIMAttributedLabelDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMAttributedLabelDefines.h; sourceTree = "<group>"; };
+		E4EF06E51B7DAFCA006669AC /* NIMAttributedLabelURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMAttributedLabelURL.h; sourceTree = "<group>"; };
+		E4EF06E61B7DAFCA006669AC /* NIMAttributedLabelURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMAttributedLabelURL.m; sourceTree = "<group>"; };
+		E4EF06E71B7DAFCA006669AC /* NSMutableAttributedString+NIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+NIM.h"; sourceTree = "<group>"; };
+		E4EF06E81B7DAFCA006669AC /* NSMutableAttributedString+NIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+NIM.m"; sourceTree = "<group>"; };
+		E4EF06EA1B7DAFCA006669AC /* NIMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMImageCache.h; sourceTree = "<group>"; };
+		E4EF06EB1B7DAFCA006669AC /* NIMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMImageCache.m; sourceTree = "<group>"; };
+		E4EF06EC1B7DAFCA006669AC /* NIMWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMWebImageCompat.h; sourceTree = "<group>"; };
+		E4EF06ED1B7DAFCA006669AC /* NIMWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMWebImageCompat.m; sourceTree = "<group>"; };
+		E4EF06EE1B7DAFCA006669AC /* NIMWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMWebImageDecoder.h; sourceTree = "<group>"; };
+		E4EF06EF1B7DAFCA006669AC /* NIMWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMWebImageDecoder.m; sourceTree = "<group>"; };
+		E4EF06F01B7DAFCA006669AC /* NIMWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMWebImageDownloader.h; sourceTree = "<group>"; };
+		E4EF06F11B7DAFCA006669AC /* NIMWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMWebImageDownloader.m; sourceTree = "<group>"; };
+		E4EF06F21B7DAFCA006669AC /* NIMWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		E4EF06F31B7DAFCA006669AC /* NIMWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		E4EF06F41B7DAFCA006669AC /* NIMWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMWebImageManager.h; sourceTree = "<group>"; };
+		E4EF06F51B7DAFCA006669AC /* NIMWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMWebImageManager.m; sourceTree = "<group>"; };
+		E4EF06F61B7DAFCA006669AC /* NIMWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMWebImageOperation.h; sourceTree = "<group>"; };
+		E4EF06F71B7DAFCA006669AC /* NIMWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMWebImagePrefetcher.h; sourceTree = "<group>"; };
+		E4EF06F81B7DAFCA006669AC /* NIMWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMWebImagePrefetcher.m; sourceTree = "<group>"; };
+		E4EF06F91B7DAFCA006669AC /* NSData+NIMImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NIMImageContentType.h"; sourceTree = "<group>"; };
+		E4EF06FA1B7DAFCA006669AC /* NSData+NIMImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NIMImageContentType.m"; sourceTree = "<group>"; };
+		E4EF06FB1B7DAFCA006669AC /* UIImage+NIMGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NIMGIF.h"; sourceTree = "<group>"; };
+		E4EF06FC1B7DAFCA006669AC /* UIImage+NIMGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NIMGIF.m"; sourceTree = "<group>"; };
+		E4EF06FD1B7DAFCA006669AC /* UIImage+NIMMultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NIMMultiFormat.h"; sourceTree = "<group>"; };
+		E4EF06FE1B7DAFCA006669AC /* UIImage+NIMMultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NIMMultiFormat.m"; sourceTree = "<group>"; };
+		E4EF06FF1B7DAFCA006669AC /* UIView+NIMWebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NIMWebCacheOperation.h"; sourceTree = "<group>"; };
+		E4EF07001B7DAFCA006669AC /* UIView+NIMWebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NIMWebCacheOperation.m"; sourceTree = "<group>"; };
+		E4EF07221B7DB242006669AC /* NIMCellConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMCellConfig.h; sourceTree = "<group>"; };
+		E4EF07231B7DB242006669AC /* NIMInputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMInputProtocol.h; sourceTree = "<group>"; };
+		E4EF07241B7DB242006669AC /* NIMKitDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMKitDataProvider.h; sourceTree = "<group>"; };
+		E4EF07251B7DB242006669AC /* NIMMessageCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMMessageCellProtocol.h; sourceTree = "<group>"; };
+		E4EF07261B7DB242006669AC /* NIMSessionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionConfig.h; sourceTree = "<group>"; };
+		E4EF072C1B7DB285006669AC /* NIMBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMBadgeView.h; sourceTree = "<group>"; };
+		E4EF072D1B7DB285006669AC /* NIMBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMBadgeView.m; sourceTree = "<group>"; };
+		E4EF07351B7DB2B9006669AC /* NIMMediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMMediaItem.h; sourceTree = "<group>"; };
+		E4EF07361B7DB2B9006669AC /* NIMMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMMessageModel.h; sourceTree = "<group>"; };
+		E4EF07371B7DB2B9006669AC /* NIMMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMMessageModel.m; sourceTree = "<group>"; };
+		E4EF073F1B7DB2D5006669AC /* NIMKitMessageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMKitMessageProvider.h; sourceTree = "<group>"; };
+		E4EF07411B7DB2F7006669AC /* NIMSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionViewController.h; sourceTree = "<group>"; };
+		E4EF07421B7DB2F7006669AC /* NIMSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMSessionViewController.m; sourceTree = "<group>"; };
+		E4EF07451B7DB31D006669AC /* NIMSessionMessageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NIMSessionMessageContentView.h; path = SessionContentView/NIMSessionMessageContentView.h; sourceTree = "<group>"; };
+		E4EF07461B7DB31D006669AC /* NIMSessionMessageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NIMSessionMessageContentView.m; path = SessionContentView/NIMSessionMessageContentView.m; sourceTree = "<group>"; };
+		E4EF07491B7DB356006669AC /* NIMSessionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMSessionListViewController.h; sourceTree = "<group>"; };
+		E4EF074A1B7DB356006669AC /* NIMSessionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NIMSessionListViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E4EF074D1B7DB3A2006669AC /* NIMMediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMMediaItem.m; sourceTree = "<group>"; };
+		E7D94956A6ED39216F218408 /* NIMTeam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMTeam.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Team/NIMTeam.h; sourceTree = SOURCE_ROOT; };
+		E80545F5807D568B04E16C94 /* NIMCreateTeamOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMCreateTeamOption.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Team/NIMCreateTeamOption.h; sourceTree = SOURCE_ROOT; };
+		E8144EB6881DA940BB7F3038 /* NIMNotificationObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMNotificationObject.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject/NIMNotificationObject.h; sourceTree = SOURCE_ROOT; };
+		EC244313B72E6260B13E7690 /* NIMChatroomMemberRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMChatroomMemberRequest.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Chatroom/NIMChatroomMemberRequest.h; sourceTree = SOURCE_ROOT; };
+		F0CF4C47AB24C76F7A457644 /* NIMUserManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMUserManagerProtocol.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Protocol/NIMUserManagerProtocol.h; sourceTree = SOURCE_ROOT; };
+		F21F448D8C1084AB208066B6 /* NIMUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMUser.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMUser.h; sourceTree = SOURCE_ROOT; };
+		F46748FF90B2FA5E7ECEEB43 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = ./NIMKit/Vendors/NIMAVChat/Libs/libopus.a; sourceTree = SOURCE_ROOT; };
+		F7DA499997EBF02FE81BAF29 /* NIMTipObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMTipObject.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject/NIMTipObject.h; sourceTree = SOURCE_ROOT; };
+		FD9E468EB2F75E28D80AA4CC /* NIMTeamDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMTeamDefs.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Team/NIMTeamDefs.h; sourceTree = SOURCE_ROOT; };
+		FFF04E12A96D0773842A952C /* NIMLocationObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMLocationObject.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject/NIMLocationObject.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6187F91C1B818ED800EFFB3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763B4EFC944D10E76F3654D6 /* libNIMSDK.a */,
+				FA57455BB3C8A9AE326B6530 /* libevent.a */,
+				C3D64A71A6DD9C58FCC2D63D /* libaacplus.a */,
+				E7504936BC5E863360E50BC9 /* libssl.a */,
+				3579414FA177B0D703E94FE7 /* libcrypto.a */,
+				E495442B805B78202E727F82 /* libNIMAVChat.a */,
+				25CE4DCC9991942C57ECB956 /* libopenh264.a */,
+				81D84AA3858EDD38A7BA6A0B /* libnvs.a */,
+				4EEE48D9956F5BC090A53ADC /* libnio.a */,
+				BD7E40859D4973FD666069BC /* libnts.a */,
+				65A5475AAF8A7D62DB89CD55 /* libopus.a */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FC940DCA0CC2C0D949B0AAB /* NotificationContent */ = {
+			isa = PBXGroup;
+			children = (
+				DD9647EABC5CDC387A0B5D63 /* NIMUnsupportedNotificationContent.h */,
+				14CD4C55B5D7137DE65D9483 /* NIMNetCallNotificationContent.h */,
+				400D4E94B4F490B58C076172 /* NIMChatroomNotificationContent.h */,
+				71FA4CE0835E99F2BCF73F0B /* NIMNotificationContent.h */,
+				9481481F83A78BF358FFF282 /* NIMTeamNotificationContent.h */,
+			);
+			name = NotificationContent;
+			path = NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject/NotificationContent;
+			sourceTree = SOURCE_ROOT;
+		};
+		10BF4ED480E30EC8E844A41C /* ExportHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				0B164093A90C6AC4CCE31051 /* NIMAVChat.h */,
+				BCCF461296C7FF77F4BEC0E3 /* NIMNetCallMeeting.h */,
+				8EE746EEA17BFA9CAEB05F47 /* NIMRTSOption.h */,
+				0ED6400AA8D1AA8F57FB8856 /* NIMRTSRecordingInfo.h */,
+				71D846E2A036CAB467ED1389 /* NIMNetCallUserInfo.h */,
+				B6D84BEBA27D73188975FCC8 /* NIMRTSManagerProtocol.h */,
+				70A942D1BB9FE4BB40F7D169 /* NIMNetCallOption.h */,
+				CE7B43E1A44A68D4ACD52E42 /* NIMNetCallManagerProtocol.h */,
+				AE924930A1E9491D30A7141B /* NIMNetCallDefs.h */,
+				6A7A47B999F33A27EFE5BC6E /* NIMNetCallRecordingInfo.h */,
+			);
+			name = ExportHeaders;
+			path = NIMKit/Vendors/NIMAVChat/ExportHeaders;
+			sourceTree = SOURCE_ROOT;
+		};
+		548F48268A57998900D11ACD /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E43643D79A893708BAAA7706 /* NIMTeamManagerProtocol.h */,
+				B95F4C19843BF3070CB86EBE /* NIMChatroomManagerProtocol.h */,
+				F0CF4C47AB24C76F7A457644 /* NIMUserManagerProtocol.h */,
+				52414E708F5E54D6CAA35815 /* NIMChatManagerProtocol.h */,
+				62374AD7984C1302ED11BBA6 /* NIMSystemNotificationManagerProtocol.h */,
+				E170431B99DE1C71377D46F9 /* NIMConversationManagerProtocol.h */,
+				CDE84924A773C0D010E9E72D /* NIMApnsManagerProtocol.h */,
+				3EC642ACAE40DDD24FF0085E /* NIMLoginManagerProtocol.h */,
+				79924ABF9B2A6277130F77B4 /* NIMMediaManagerProtocol.h */,
+				48CC4BB6A97C8BE3D6AC842F /* NIMResourceManagerProtocol.h */,
+				581C49CAB47E11074B56FB8B /* NIMMessageObjectProtocol.h */,
+			);
+			name = Protocol;
+			path = NIMKit/Vendors/NIMSDK/ExportHeaders/Protocol;
+			sourceTree = SOURCE_ROOT;
+		};
+		54AC41BD932E0BCFE6D79F40 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				A7544378BA5B2F18BDCC0227 /* libopenh264.a */,
+				4E10412C92732157C9A9A61E /* libnvs.a */,
+				A8B148EDB34AAE2728E382F3 /* libnio.a */,
+				6EC24D549C147B07F35205D0 /* libnts.a */,
+				F46748FF90B2FA5E7ECEEB43 /* libopus.a */,
+			);
+			name = Libs;
+			path = NIMKit/Vendors/NIMAVChat/Libs;
+			sourceTree = SOURCE_ROOT;
+		};
+		6132C70E1BA7C47B00897DDB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6132C70F1BA7C47C00897DDB /* NIMContactDataCell.h */,
+				6132C7101BA7C47C00897DDB /* NIMContactDataCell.m */,
+				6132C7131BA7C47C00897DDB /* NIMContactDefines.h */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		61344C081B720CB2005A96AE /*  */ = {
+			isa = PBXGroup;
+			children = (
+				61344C131B720CB2005A96AE /* NIMKit */,
+				61344C121B720CB2005A96AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61344C121B720CB2005A96AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6187F91F1B818ED800EFFB3A /* libNIMKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61344C131B720CB2005A96AE /* NIMKit */ = {
+			isa = PBXGroup;
+			children = (
+				E4EF06DE1B7DAFCA006669AC /* Vendors */,
+				61DFDA471B74907800DD5F2A /* Classes */,
+				61DFDA4F1B74976400DD5F2A /* Supporting Files */,
+			);
+			path = NIMKit;
+			sourceTree = "<group>";
+		};
+		613D35BE1B79E9480078B09D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				613D35BF1B79E9480078B09D /* NIMSessionListCell.h */,
+				613D35C01B79E9480078B09D /* NIMSessionListCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		613D35C31B79E9650078B09D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				613D35C41B79EA7E0078B09D /* NIMSessionListDefaultConfig.h */,
+				613D35C51B79EA7E0078B09D /* NIMSessionListDefaultConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		61437FEE1B777C7400B6C2D1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				614B8E331C5209940091BF28 /* NIMTipContentConfig.h */,
+				614B8E341C5209940091BF28 /* NIMTipContentConfig.m */,
+				61F1B2A21B7B948B009097EC /* NIMCellLayoutDefaultConfig.h */,
+				61F1B2A31B7B948B009097EC /* NIMCellLayoutDefaultConfig.m */,
+				E4EA43451BA7E5E5003FC1BA /* NIMBaseSessionContentConfig.h */,
+				E4EA43461BA7E5E5003FC1BA /* NIMBaseSessionContentConfig.m */,
+				E4EA43481BA7EA20003FC1BA /* NIMUnsupportContentConfig.h */,
+				E4EA43491BA7EA20003FC1BA /* NIMUnsupportContentConfig.m */,
+				E4EA434B1BA7EA72003FC1BA /* NIMTextContentConfig.h */,
+				E4EA434C1BA7EA72003FC1BA /* NIMTextContentConfig.m */,
+				E4EA434E1BA7EA7F003FC1BA /* NIMImageContentConfig.h */,
+				E4EA434F1BA7EA7F003FC1BA /* NIMImageContentConfig.m */,
+				E4EA43511BA7EA96003FC1BA /* NIMAudioContentConfig.h */,
+				E4EA43521BA7EA96003FC1BA /* NIMAudioContentConfig.m */,
+				E4EA43541BA7EAA3003FC1BA /* NIMVideoContentConfig.h */,
+				E4EA43551BA7EAA3003FC1BA /* NIMVideoContentConfig.m */,
+				E4EA43571BA7EAB1003FC1BA /* NIMFileContentConfig.h */,
+				E4EA43581BA7EAB1003FC1BA /* NIMFileContentConfig.m */,
+				E4EA435A1BA7EAC3003FC1BA /* NIMNotificationContentConfig.h */,
+				E4EA435B1BA7EAC3003FC1BA /* NIMNotificationContentConfig.m */,
+				E4EA435D1BA7EAD8003FC1BA /* NIMLocationContentConfig.h */,
+				E4EA435E1BA7EAD8003FC1BA /* NIMLocationContentConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6191674A1B7788B100B5A31C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4EF07451B7DB31D006669AC /* NIMSessionMessageContentView.h */,
+				E4EF07461B7DB31D006669AC /* NIMSessionMessageContentView.m */,
+				614B71161B78A34700F02B1B /* NIMSessionTimestampCell.h */,
+				614B71171B78A34700F02B1B /* NIMSessionTimestampCell.m */,
+				6191674B1B7788D300B5A31C /* NIMMessageCell.h */,
+				6191674C1B7788D300B5A31C /* NIMMessageCell.m */,
+				61FAB9621B7836B400355B95 /* SessionContentView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61A2C88D1BA6BDC0006304F9 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				6132C70E1BA7C47B00897DDB /* Cell */,
+				61A2C8A11BA6D797006304F9 /* ContactGroup */,
+				61D99FF91BB008490059D369 /* NIMContactDataItem.h */,
+				61D99FFA1BB008490059D369 /* NIMContactDataItem.m */,
+				61A2C8921BA6C2A1006304F9 /* NIMContactPickedView.h */,
+				61A2C8931BA6C2A1006304F9 /* NIMContactPickedView.m */,
+				61A2C88F1BA6BFE2006304F9 /* NIMContactSelectViewController.h */,
+				61A2C8901BA6BFE2006304F9 /* NIMContactSelectViewController.m */,
+				61A2C8951BA6C8B9006304F9 /* NIMContactSelectConfig.h */,
+				61A2C8961BA6C8B9006304F9 /* NIMContactSelectConfig.m */,
+				611B65D81BA8591700038641 /* NIMContactSelectTabView.h */,
+				611B65D91BA8591700038641 /* NIMContactSelectTabView.m */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		61A2C88E1BA6BDC0006304F9 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				61D99FCD1BAFF6190059D369 /* Model */,
+				61D99FB81BAFF48A0059D369 /* View */,
+				61D99F9C1BAFF4770059D369 /* NIMCreateTeamAnnouncement.h */,
+				61D99F9D1BAFF4770059D369 /* NIMCreateTeamAnnouncement.m */,
+				61D99F9F1BAFF4770059D369 /* NIMNormalTeamCardViewController.h */,
+				61D99FA01BAFF4770059D369 /* NIMNormalTeamCardViewController.m */,
+				61D99FA11BAFF4770059D369 /* NIMAdvancedTeamCardViewController.h */,
+				61D99FA21BAFF4770059D369 /* NIMAdvancedTeamCardViewController.m */,
+				61D99FA41BAFF4770059D369 /* NIMTeamAnnouncementListViewController.h */,
+				61D99FA51BAFF4770059D369 /* NIMTeamAnnouncementListViewController.m */,
+				61D99FA91BAFF4770059D369 /* NIMTeamMemberCardViewController.h */,
+				61D99FAA1BAFF4770059D369 /* NIMTeamMemberCardViewController.m */,
+				61D99FAC1BAFF4770059D369 /* NIMTeamMemberListViewController.h */,
+				61D99FAD1BAFF4770059D369 /* NIMTeamMemberListViewController.m */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		61A2C8A11BA6D797006304F9 /* ContactGroup */ = {
+			isa = PBXGroup;
+			children = (
+				61A2C8A41BA6D797006304F9 /* NIMGroupedDataCollection.h */,
+				61A2C8A51BA6D797006304F9 /* NIMGroupedDataCollection.m */,
+				61A2C8A61BA6D797006304F9 /* NIMGroupedUsrInfo.h */,
+				61A2C8A71BA6D797006304F9 /* NIMGroupedUsrInfo.m */,
+			);
+			path = ContactGroup;
+			sourceTree = "<group>";
+		};
+		61A2C8AB1BA6DC4F006304F9 /* Spelling */ = {
+			isa = PBXGroup;
+			children = (
+				61A2C8AC1BA6DC4F006304F9 /* NIMPinyinConverter.h */,
+				61A2C8AD1BA6DC4F006304F9 /* NIMPinyinConverter.m */,
+				61A2C8AE1BA6DC4F006304F9 /* NIMSpellingCenter.h */,
+				61A2C8AF1BA6DC4F006304F9 /* NIMSpellingCenter.m */,
+			);
+			path = Spelling;
+			sourceTree = "<group>";
+		};
+		61B1F7A11B7866030065FEFB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				61A2C8AB1BA6DC4F006304F9 /* Spelling */,
+				61B1F7A21B7866160065FEFB /* NIMKitUtil.h */,
+				61B1F7A31B7866160065FEFB /* NIMKitUtil.m */,
+				6157802C1B8F246F00C441F2 /* NIMKitTimerHolder.h */,
+				6157802D1B8F246F00C441F2 /* NIMKitTimerHolder.m */,
+				61BED5D51CE42BC4002E635C /* NIMKitDevice.h */,
+				61BED5D61CE42BC4002E635C /* NIMKitDevice.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		61D99FB81BAFF48A0059D369 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61D99FBB1BAFF48A0059D369 /* NIMAdvancedTeamMemberCell.h */,
+				61D99FBC1BAFF48A0059D369 /* NIMAdvancedTeamMemberCell.m */,
+				61D99FBD1BAFF48A0059D369 /* NIMTeamAnnouncementListCell.h */,
+				61D99FBE1BAFF48A0059D369 /* NIMTeamAnnouncementListCell.m */,
+				61D99FC01BAFF48A0059D369 /* NIMTeamCardHeaderCell.h */,
+				61D99FC11BAFF48A0059D369 /* NIMTeamCardHeaderCell.m */,
+				61D99FC21BAFF48A0059D369 /* NIMTeamSwitchTableViewCell.h */,
+				61D99FC31BAFF48A0059D369 /* NIMTeamSwitchTableViewCell.m */,
+				61D99FC51BAFF48A0059D369 /* NIMTimePickerView.h */,
+				61D99FC61BAFF48A0059D369 /* NIMTimePickerView.m */,
+				61F4E5621CE1C40D000AD2A9 /* NIMTeamMemberCardHeaderCell.h */,
+				61F4E5631CE1C40D000AD2A9 /* NIMTeamMemberCardHeaderCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61D99FCD1BAFF6190059D369 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				61D99FCE1BAFF6190059D369 /* NIMCardDataSourceProtocol.h */,
+				61D99FCF1BAFF6190059D369 /* NIMCardMemberItem.h */,
+				61D99FD01BAFF6190059D369 /* NIMCardMemberItem.m */,
+				61D99FD11BAFF6190059D369 /* NIMTeamCardOperationItem.h */,
+				61D99FD21BAFF6190059D369 /* NIMTeamCardOperationItem.m */,
+				61D99FD31BAFF6190059D369 /* NIMTeamCardRowItem.h */,
+				61D99FD41BAFF6190059D369 /* NIMTeamCardRowItem.m */,
+				61D99FD51BAFF6190059D369 /* NIMTeamInfoData.h */,
+				61D99FD61BAFF6190059D369 /* NIMTeamInfoData.m */,
+				61D99FD71BAFF6190059D369 /* NIMUsrInfoData.h */,
+				61D99FD81BAFF6190059D369 /* NIMUsrInfoData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		61D99FE11BAFFA760059D369 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				61D99FE41BAFFA760059D369 /* SVProgressHUD */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		61D99FE41BAFFA760059D369 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				61D99FE51BAFFA760059D369 /* NIMIndefiniteAnimatedView.h */,
+				61D99FE61BAFFA760059D369 /* NIMIndefiniteAnimatedView.m */,
+				61D99FE81BAFFA760059D369 /* NIMProgressHUD.h */,
+				61D99FE91BAFFA760059D369 /* NIMProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		61D99FEA1BAFFA760059D369 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				61D99FED1BAFFA760059D369 /* Toast */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		61D99FED1BAFFA760059D369 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				61D99FEE1BAFFA760059D369 /* Toast */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		61D99FEE1BAFFA760059D369 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				61D99FEF1BAFFA760059D369 /* UIView+NIMKitToast.h */,
+				61D99FF01BAFFA760059D369 /* UIView+NIMKitToast.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		61DFDA471B74907800DD5F2A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB3B181C55EB6300A47C41 /* NIMKit.h */,
+				E4EB3B191C55EB6300A47C41 /* NIMKit.m */,
+				E4EB3B1B1C55EB6B00A47C41 /* Global */,
+				E4EF07211B7DB242006669AC /* Protocols */,
+				61DFDA651B764E9600DD5F2A /* Sections */,
+				61DFDA511B749C4A00DD5F2A /* Category */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		61DFDA4F1B74976400DD5F2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB3B1D1C55EB7A00A47C41 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61DFDA511B749C4A00DD5F2A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6110D8AD1C24001300805BA4 /* UITableView+NIMScrollToBottom.h */,
+				6110D8AE1C24001300805BA4 /* UITableView+NIMScrollToBottom.m */,
+				615E0C0B1B76583000B404FB /* UIView+NIM.h */,
+				615E0C0C1B76583000B404FB /* UIView+NIM.m */,
+				615E0C111B765A9F00B404FB /* UIImage+NIM.h */,
+				615E0C121B765A9F00B404FB /* UIImage+NIM.m */,
+				6198A5CF1B765E2A001757B6 /* NSString+NIM.h */,
+				6198A5D01B765E2A001757B6 /* NSString+NIM.m */,
+				61B1F7B21B7885040065FEFB /* NIMAttributedLabel+NIMKit.h */,
+				61B1F7B31B7885040065FEFB /* NIMAttributedLabel+NIMKit.m */,
+				E479641C1CCDB95600A4534A /* NIMExtensionHelper.h */,
+				E479641D1CCDB95600A4534A /* NIMExtensionHelper.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		61DFDA651B764E9600DD5F2A /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				61A2C88D1BA6BDC0006304F9 /* Contact */,
+				61A2C88E1BA6BDC0006304F9 /* Team */,
+				E4EF07301B7DB2B9006669AC /* Model */,
+				61B1F7A11B7866030065FEFB /* Util */,
+				61DFDA7D1B764FAE00DD5F2A /* Common */,
+				61DFDA661B764E9600DD5F2A /* Input */,
+				61DFDA6F1B764E9600DD5F2A /* Session */,
+				61DFDA741B764E9600DD5F2A /* SessionList */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		61DFDA661B764E9600DD5F2A /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				61B1F7B61B7885B50065FEFB /* NIMInputEmoticonParser.h */,
+				61B1F7B71B7885B50065FEFB /* NIMInputEmoticonParser.m */,
+				61DFDA671B764E9600DD5F2A /* NIMInputMoreContainerView.h */,
+				61DFDA681B764E9600DD5F2A /* NIMInputMoreContainerView.m */,
+				61DFDA691B764E9600DD5F2A /* NIMInputTextView.h */,
+				61DFDA6A1B764E9600DD5F2A /* NIMInputTextView.m */,
+				61DFDA6B1B764E9600DD5F2A /* NIMInputView.h */,
+				61DFDA6C1B764E9600DD5F2A /* NIMInputView.m */,
+				614B711C1B78C22E00F02B1B /* NIMInputToolBar.h */,
+				614B711D1B78C22E00F02B1B /* NIMInputToolBar.m */,
+				615E0C081B76573200B404FB /* NIMInputEmoticonContainerView.h */,
+				615E0C091B76573200B404FB /* NIMInputEmoticonContainerView.m */,
+				615E0C0E1B7659BB00B404FB /* NIMInputEmoticonButton.h */,
+				615E0C0F1B7659BB00B404FB /* NIMInputEmoticonButton.m */,
+				615E0C141B765B3200B404FB /* NIMInputEmoticonDefine.h */,
+				615E0C151B765C5B00B404FB /* NIMInputEmoticonManager.h */,
+				615E0C161B765C5B00B404FB /* NIMInputEmoticonManager.m */,
+				6198A5D41B766494001757B6 /* NIMInputEmoticonTabView.h */,
+				6198A5D51B766494001757B6 /* NIMInputEmoticonTabView.m */,
+				6198A5E91B7712FA001757B6 /* NIMInputAudioRecordIndicatorView.h */,
+				6198A5EA1B7712FA001757B6 /* NIMInputAudioRecordIndicatorView.m */,
+				612FA94F1C1EACB3008956C9 /* NIMInputBarItemType.h */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		61DFDA6F1B764E9600DD5F2A /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				E4EF07411B7DB2F7006669AC /* NIMSessionViewController.h */,
+				E4EF07421B7DB2F7006669AC /* NIMSessionViewController.m */,
+				6191674A1B7788B100B5A31C /* View */,
+				61437FEE1B777C7400B6C2D1 /* Config */,
+				61DFDA701B764E9600DD5F2A /* NIMSessionMsgDatasource.h */,
+				61DFDA711B764E9600DD5F2A /* NIMSessionMsgDatasource.m */,
+				61F1B29B1B7B5B79009097EC /* NIMMessageCellMaker.h */,
+				61F1B29C1B7B5B79009097EC /* NIMMessageCellMaker.m */,
+				6198A5DB1B7669D9001757B6 /* NIMSessionViewLayoutManager.h */,
+				6198A5DC1B7669D9001757B6 /* NIMSessionViewLayoutManager.m */,
+				61DFDA721B764E9600DD5F2A /* NIMTimestampModel.h */,
+				61DFDA731B764E9600DD5F2A /* NIMTimestampModel.m */,
+				6114BBCA1B78FBA300D5AD02 /* NIMMessageMaker.h */,
+				6114BBCB1B78FBA300D5AD02 /* NIMMessageMaker.m */,
+				613D35D41B7AF13B0078B09D /* NIMDefaultValueMaker.h */,
+				613D35D51B7AF13B0078B09D /* NIMDefaultValueMaker.m */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		61DFDA741B764E9600DD5F2A /* SessionList */ = {
+			isa = PBXGroup;
+			children = (
+				E4EF07491B7DB356006669AC /* NIMSessionListViewController.h */,
+				E4EF074A1B7DB356006669AC /* NIMSessionListViewController.m */,
+				613D35C31B79E9650078B09D /* Config */,
+				613D35BE1B79E9480078B09D /* View */,
+			);
+			path = SessionList;
+			sourceTree = "<group>";
+		};
+		61DFDA7D1B764FAE00DD5F2A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				615BD0F11B85A6A2000F174B /* NIMLoadProgressView.h */,
+				615BD0F21B85A6A2000F174B /* NIMLoadProgressView.m */,
+				E4EF072C1B7DB285006669AC /* NIMBadgeView.h */,
+				E4EF072D1B7DB285006669AC /* NIMBadgeView.m */,
+				6114BBC61B78F7C100D5AD02 /* NIMCustomLeftBarView.h */,
+				6114BBC71B78F7C100D5AD02 /* NIMCustomLeftBarView.m */,
+				619AF5BF1B788E5E0073623F /* NIMAvatarImageView.h */,
+				619AF5C01B788E5E0073623F /* NIMAvatarImageView.m */,
+				61DFDA7E1B764FAE00DD5F2A /* NIMPageView.h */,
+				61DFDA7F1B764FAE00DD5F2A /* NIMPageView.m */,
+				61E906001BCF4EBE006DBDA6 /* NIMMemberGroupView.h */,
+				61E906011BCF4EBE006DBDA6 /* NIMMemberGroupView.m */,
+				610D719F1D0E5A9C00FCE25A /* NIMKitNotificationFirer.h */,
+				610D71A01D0E5A9C00FCE25A /* NIMKitNotificationFirer.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		61FAB9621B7836B400355B95 /* SessionContentView */ = {
+			isa = PBXGroup;
+			children = (
+				61FAB9631B7836B400355B95 /* NIMSessionAudioContentView.h */,
+				61FAB9641B7836B400355B95 /* NIMSessionAudioContentView.m */,
+				61FAB9671B7836B400355B95 /* NIMSessionFileTransContentView.h */,
+				61FAB9681B7836B400355B95 /* NIMSessionFileTransContentView.m */,
+				61FAB9691B7836B400355B95 /* NIMSessionImageContentView.h */,
+				61FAB96A1B7836B400355B95 /* NIMSessionImageContentView.m */,
+				61FAB96D1B7836B400355B95 /* NIMSessionLocationContentView.h */,
+				61FAB96E1B7836B400355B95 /* NIMSessionLocationContentView.m */,
+				61FAB9711B7836B400355B95 /* NIMSessionNetChatNotifyContentView.h */,
+				61FAB9721B7836B400355B95 /* NIMSessionNetChatNotifyContentView.m */,
+				61FAB9731B7836B400355B95 /* NIMSessionNotificationContentView.h */,
+				61FAB9741B7836B400355B95 /* NIMSessionNotificationContentView.m */,
+				61FAB9771B7836B400355B95 /* NIMSessionTextContentView.h */,
+				61FAB9781B7836B400355B95 /* NIMSessionTextContentView.m */,
+				61FAB9791B7836B400355B95 /* NIMSessionUnknowContentView.h */,
+				61FAB97A1B7836B400355B95 /* NIMSessionUnknowContentView.m */,
+				61FAB97B1B7836B400355B95 /* NIMSessionVideoContentView.h */,
+				61FAB97C1B7836B400355B95 /* NIMSessionVideoContentView.m */,
+			);
+			path = SessionContentView;
+			sourceTree = "<group>";
+		};
+		62814087B38FBC6C6C96A710 /* Chatroom */ = {
+			isa = PBXGroup;
+			children = (
+				713D48799D0A613B5B1E946E /* NIMChatroomQueueRequest.h */,
+				434842F3ACA3341C457B8C83 /* NIMMessageChatroomExtension.h */,
+				45744C918C7D8EF21E214E17 /* NIMChatroom.h */,
+				EC244313B72E6260B13E7690 /* NIMChatroomMemberRequest.h */,
+				09F144458C9FEA2C5A3506B8 /* NIMChatroomEnterRequest.h */,
+				280D46D89B754A1E0BB7688B /* NIMChatroomMember.h */,
+				0D2A45BB81048FD00EBAC298 /* NIMChatroomUpdateRequest.h */,
+			);
+			name = Chatroom;
+			path = NIMKit/Vendors/NIMSDK/ExportHeaders/Chatroom;
+			sourceTree = SOURCE_ROOT;
+		};
+		664749778DA8DD487690DC77 /* NIMAVChat */ = {
+			isa = PBXGroup;
+			children = (
+				04B248C7ADCB7DB3B9C1D58E /* libNIMAVChat.a */,
+				10BF4ED480E30EC8E844A41C /* ExportHeaders */,
+				54AC41BD932E0BCFE6D79F40 /* Libs */,
+			);
+			name = NIMAVChat;
+			path = NIMKit/Vendors/NIMAVChat;
+			sourceTree = SOURCE_ROOT;
+		};
+		7C2B45B69A41162C1B5F03B7 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				D90A49ADAABEBEA07BB2C469 /* libevent.a */,
+				9BE34D23BC33E66FB30233CB /* libaacplus.a */,
+				69E646108E9DA26F358E3765 /* libssl.a */,
+				383045D7B4B01D892377024E /* libcrypto.a */,
+			);
+			name = Libs;
+			path = NIMKit/Vendors/NIMSDK/Libs;
+			sourceTree = SOURCE_ROOT;
+		};
+		851F40388259EF7A25D1C5DC /* ExportHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				9EAD4B38B9179F330C581915 /* NIMSession.h */,
+				47F34902915645C6BE0B7347 /* NIMSDKHeaders.h */,
+				129B44B7AEB141C4313847C1 /* NIMGlobalDefs.h */,
+				E3324664BC39CB97B65C8A03 /* NIMMessageSetting.h */,
+				0A324BB8AC06C97B0DC61D74 /* NIMSystemNotification.h */,
+				AD5A4ADFBC811FAF4A11A7E6 /* NIMLoginClient.h */,
+				F21F448D8C1084AB208066B6 /* NIMUser.h */,
+				184F4C368E825E3FD68FC5C0 /* NIMCustomSystemNotificationSetting.h */,
+				C8BA4CE28D7B89EAAC829CAA /* NIMAntiSpamOption.h */,
+				A3BF47899CE4DF6D02EBE16F /* NIMMessageReceipt.h */,
+				B51347C3B56BAF355783AD50 /* NIMSDKConfig.h */,
+				C06F4E08A120695D0A67AB22 /* NIMRecentSession.h */,
+				964840E8918FB6B65DB9310D /* NIMSDK.h */,
+				93DA4D93BF1F3A86AAA609E7 /* NIMMessageApnsMemberOption.h */,
+				41754EBAB7ED65D9B4A6D28A /* NIMPushNotificationSetting.h */,
+				5D0545B1B68A665E9D69606E /* NIMMessage.h */,
+				0888417985B37079C14B9306 /* NIMMessageSearchOption.h */,
+				62814087B38FBC6C6C96A710 /* Chatroom */,
+				CC6142CA9F928AC15B74CEB3 /* MessageObject */,
+				548F48268A57998900D11ACD /* Protocol */,
+				8A8046E2A2ACA8276B8EE33D /* Team */,
+			);
+			name = ExportHeaders;
+			path = NIMKit/Vendors/NIMSDK/ExportHeaders;
+			sourceTree = SOURCE_ROOT;
+		};
+		8A8046E2A2ACA8276B8EE33D /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				E80545F5807D568B04E16C94 /* NIMCreateTeamOption.h */,
+				718C4D45A786437C8B3E4D29 /* NIMTeamMember.h */,
+				FD9E468EB2F75E28D80AA4CC /* NIMTeamDefs.h */,
+				E7D94956A6ED39216F218408 /* NIMTeam.h */,
+			);
+			name = Team;
+			path = NIMKit/Vendors/NIMSDK/ExportHeaders/Team;
+			sourceTree = SOURCE_ROOT;
+		};
+		C6B14AD7B6B3F28491B200B8 /* NIMSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0715401BB8DD6F74F55A2EF4 /* libNIMSDK.a */,
+				851F40388259EF7A25D1C5DC /* ExportHeaders */,
+				7C2B45B69A41162C1B5F03B7 /* Libs */,
+			);
+			name = NIMSDK;
+			path = NIMKit/Vendors/NIMSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		CC6142CA9F928AC15B74CEB3 /* MessageObject */ = {
+			isa = PBXGroup;
+			children = (
+				FFF04E12A96D0773842A952C /* NIMLocationObject.h */,
+				7BA94F0B9C81BAA5F25C95C8 /* NIMAudioObject.h */,
+				5AE849CABD5C61CF1B321CFE /* NIMFileObject.h */,
+				D7F746A49B31F542DAA91A1E /* NIMCustomObject.h */,
+				22D64A779277128BA1C60C10 /* NIMVideoObject.h */,
+				E8144EB6881DA940BB7F3038 /* NIMNotificationObject.h */,
+				D3894F36B8F98F991F2600CA /* NIMImageObject.h */,
+				F7DA499997EBF02FE81BAF29 /* NIMTipObject.h */,
+				0FC940DCA0CC2C0D949B0AAB /* NotificationContent */,
+			);
+			name = MessageObject;
+			path = NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EB3B1B1C55EB6B00A47C41 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB3B1C1C55EB6B00A47C41 /* NIMGlobalMacro.h */,
+				61F4E5611CE1B8D4000AD2A9 /* NIMCommonTableViewCell.h */,
+				61F4E55B1CE1AF6F000AD2A9 /* NIMCommonTableData.h */,
+				61F4E55C1CE1AF6F000AD2A9 /* NIMCommonTableData.m */,
+				61F4E55D1CE1AF6F000AD2A9 /* NIMCommonTableDelegate.h */,
+				61F4E55E1CE1AF6F000AD2A9 /* NIMCommonTableDelegate.m */,
+				61F4E5651CE1DBC0000AD2A9 /* NIMKitColorButtonCell.h */,
+				61F4E5661CE1DBC0000AD2A9 /* NIMKitColorButtonCell.m */,
+				61F4E5671CE1DBC0000AD2A9 /* NIMKitSwitcherCell.h */,
+				61F4E5681CE1DBC0000AD2A9 /* NIMKitSwitcherCell.m */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		E4EF06DE1B7DAFCA006669AC /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				61D99FE11BAFFA760059D369 /* SVProgressHUD */,
+				61D99FEA1BAFFA760059D369 /* Toast */,
+				E4EF06DF1B7DAFCA006669AC /* M80AttributedLabel */,
+				E4EF06E91B7DAFCA006669AC /* SDWebImage */,
+				C6B14AD7B6B3F28491B200B8 /* NIMSDK */,
+				664749778DA8DD487690DC77 /* NIMAVChat */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		E4EF06DF1B7DAFCA006669AC /* M80AttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				E4EF06E01B7DAFCA006669AC /* NIMAttributedLabel.h */,
+				E4EF06E11B7DAFCA006669AC /* NIMAttributedLabel.m */,
+				E4EF06E21B7DAFCA006669AC /* NIMAttributedLabelAttachment.h */,
+				E4EF06E31B7DAFCA006669AC /* NIMAttributedLabelAttachment.m */,
+				E4EF06E41B7DAFCA006669AC /* NIMAttributedLabelDefines.h */,
+				E4EF06E51B7DAFCA006669AC /* NIMAttributedLabelURL.h */,
+				E4EF06E61B7DAFCA006669AC /* NIMAttributedLabelURL.m */,
+				E4EF06E71B7DAFCA006669AC /* NSMutableAttributedString+NIM.h */,
+				E4EF06E81B7DAFCA006669AC /* NSMutableAttributedString+NIM.m */,
+			);
+			path = M80AttributedLabel;
+			sourceTree = "<group>";
+		};
+		E4EF06E91B7DAFCA006669AC /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				E4EF06EA1B7DAFCA006669AC /* NIMImageCache.h */,
+				E4EF06EB1B7DAFCA006669AC /* NIMImageCache.m */,
+				E4EF06EC1B7DAFCA006669AC /* NIMWebImageCompat.h */,
+				E4EF06ED1B7DAFCA006669AC /* NIMWebImageCompat.m */,
+				E4EF06EE1B7DAFCA006669AC /* NIMWebImageDecoder.h */,
+				E4EF06EF1B7DAFCA006669AC /* NIMWebImageDecoder.m */,
+				E4EF06F01B7DAFCA006669AC /* NIMWebImageDownloader.h */,
+				E4EF06F11B7DAFCA006669AC /* NIMWebImageDownloader.m */,
+				E4EF06F21B7DAFCA006669AC /* NIMWebImageDownloaderOperation.h */,
+				E4EF06F31B7DAFCA006669AC /* NIMWebImageDownloaderOperation.m */,
+				E4EF06F41B7DAFCA006669AC /* NIMWebImageManager.h */,
+				E4EF06F51B7DAFCA006669AC /* NIMWebImageManager.m */,
+				E4EF06F61B7DAFCA006669AC /* NIMWebImageOperation.h */,
+				E4EF06F71B7DAFCA006669AC /* NIMWebImagePrefetcher.h */,
+				E4EF06F81B7DAFCA006669AC /* NIMWebImagePrefetcher.m */,
+				E4EF06F91B7DAFCA006669AC /* NSData+NIMImageContentType.h */,
+				E4EF06FA1B7DAFCA006669AC /* NSData+NIMImageContentType.m */,
+				E4EF06FB1B7DAFCA006669AC /* UIImage+NIMGIF.h */,
+				E4EF06FC1B7DAFCA006669AC /* UIImage+NIMGIF.m */,
+				E4EF06FD1B7DAFCA006669AC /* UIImage+NIMMultiFormat.h */,
+				E4EF06FE1B7DAFCA006669AC /* UIImage+NIMMultiFormat.m */,
+				E4EF06FF1B7DAFCA006669AC /* UIView+NIMWebCacheOperation.h */,
+				E4EF07001B7DAFCA006669AC /* UIView+NIMWebCacheOperation.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		E4EF07211B7DB242006669AC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E4EF073F1B7DB2D5006669AC /* NIMKitMessageProvider.h */,
+				E4EF07221B7DB242006669AC /* NIMCellConfig.h */,
+				E4EF07231B7DB242006669AC /* NIMInputProtocol.h */,
+				E4EF07241B7DB242006669AC /* NIMKitDataProvider.h */,
+				E4EF07251B7DB242006669AC /* NIMMessageCellProtocol.h */,
+				E4EF07261B7DB242006669AC /* NIMSessionConfig.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E4EF07301B7DB2B9006669AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4EF07351B7DB2B9006669AC /* NIMMediaItem.h */,
+				E4EF074D1B7DB3A2006669AC /* NIMMediaItem.m */,
+				E4EF07361B7DB2B9006669AC /* NIMMessageModel.h */,
+				E4EF07371B7DB2B9006669AC /* NIMMessageModel.m */,
+				61592B7D1B7E05E300BC38C0 /* NIMKitEvent.h */,
+				61592B7E1B7E05E300BC38C0 /* NIMKitEvent.m */,
+				E465D3AE1B84704C004F3A07 /* NIMUIConfig.h */,
+				E465D3AF1B84704C004F3A07 /* NIMUIConfig.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6187F91E1B818ED800EFFB3A /* NIMKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6187F9301B818ED800EFFB3A /* Build configuration list for PBXNativeTarget "NIMKit" */;
+			buildPhases = (
+				6187F91B1B818ED800EFFB3A /* Sources */,
+				6187F91C1B818ED800EFFB3A /* Frameworks */,
+				6187F91D1B818ED800EFFB3A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NIMKit;
+			productName = NIMKit;
+			productReference = 6187F91F1B818ED800EFFB3A /* libNIMKit.a */;
+			productType = com.apple.product-type.library.static;
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61344C091B720CB2005A96AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = NetEase;
+				TargetAttributes = {
+					6187F91E1B818ED800EFFB3A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 61344C0C1B720CB2005A96AE /* Build configuration list for PBXProject "Unity-iPhone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 61344C081B720CB2005A96AE /*  */;
+			productRefGroup = 61344C121B720CB2005A96AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6187F91E1B818ED800EFFB3A /* NIMKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6187F91B1B818ED800EFFB3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D99FDA1BAFF6190059D369 /* NIMTeamCardOperationItem.m */,
+				61D99FC91BAFF48A0059D369 /* NIMTeamAnnouncementListCell.m */,
+				6187F9D41B81915700EFFB3A /* NIMAttributedLabel.m */,
+				6187F9D51B81915700EFFB3A /* NIMAttributedLabelAttachment.m */,
+				61D99FF31BAFFA760059D369 /* NIMProgressHUD.m */,
+				61D99FCB1BAFF48A0059D369 /* NIMTeamSwitchTableViewCell.m */,
+				61D99FF21BAFFA760059D369 /* NIMIndefiniteAnimatedView.m */,
+				614B8E351C5209940091BF28 /* NIMTipContentConfig.m */,
+				6187F9D61B81915700EFFB3A /* NIMAttributedLabelURL.m */,
+				6187F9D71B81915700EFFB3A /* NSMutableAttributedString+NIM.m */,
+				6187F9D81B81915700EFFB3A /* NIMImageCache.m */,
+				61D99FB11BAFF4770059D369 /* NIMCreateTeamAnnouncement.m */,
+				6187F9D91B81915700EFFB3A /* NIMWebImageCompat.m */,
+				61F4E56A1CE1DBC0000AD2A9 /* NIMKitSwitcherCell.m */,
+				E4EA435F1BA7EAD8003FC1BA /* NIMLocationContentConfig.m */,
+				6187F9DA1B81915700EFFB3A /* NIMWebImageDecoder.m */,
+				6187F9DB1B81915700EFFB3A /* NIMWebImageDownloader.m */,
+				6187F9DC1B81915700EFFB3A /* NIMWebImageDownloaderOperation.m */,
+				61F4E55F1CE1AF6F000AD2A9 /* NIMCommonTableData.m */,
+				6187F9DD1B81915700EFFB3A /* NIMWebImageManager.m */,
+				E4EB3B1A1C55EB6300A47C41 /* NIMKit.m */,
+				61A2C8911BA6BFE2006304F9 /* NIMContactSelectViewController.m */,
+				E4EA434A1BA7EA20003FC1BA /* NIMUnsupportContentConfig.m */,
+				61D99FB41BAFF4770059D369 /* NIMTeamAnnouncementListViewController.m */,
+				61F4E5641CE1C40D000AD2A9 /* NIMTeamMemberCardHeaderCell.m */,
+				6187F9DE1B81915700EFFB3A /* NIMWebImagePrefetcher.m */,
+				61E906021BCF4EBE006DBDA6 /* NIMMemberGroupView.m */,
+				6187F9DF1B81915700EFFB3A /* NSData+NIMImageContentType.m */,
+				61D99FDC1BAFF6190059D369 /* NIMTeamInfoData.m */,
+				6187F9E01B81915700EFFB3A /* UIImage+NIMGIF.m */,
+				E4EA434D1BA7EA72003FC1BA /* NIMTextContentConfig.m */,
+				6187F9E11B81915700EFFB3A /* UIImage+NIMMultiFormat.m */,
+				6187F9E21B81915700EFFB3A /* UIView+NIMWebCacheOperation.m */,
+				61D99FB61BAFF4770059D369 /* NIMTeamMemberCardViewController.m */,
+				6187F9E31B81915700EFFB3A /* NIMMediaItem.m */,
+				6187F9E51B81915700EFFB3A /* NIMMessageModel.m */,
+				6187F9E61B81915700EFFB3A /* NIMKitEvent.m */,
+				61BED5D71CE42BC4002E635C /* NIMKitDevice.m */,
+				6187F9E71B81915700EFFB3A /* NIMKitUtil.m */,
+				6187F9E81B81915700EFFB3A /* NIMBadgeView.m */,
+				61D99FF51BAFFA760059D369 /* UIView+NIMKitToast.m */,
+				6157802E1B8F246F00C441F2 /* NIMKitTimerHolder.m */,
+				61D99FD91BAFF6190059D369 /* NIMCardMemberItem.m */,
+				6187F9E91B81915700EFFB3A /* NIMCustomLeftBarView.m */,
+				E4EA43531BA7EA96003FC1BA /* NIMAudioContentConfig.m */,
+				6187F9EA1B81915700EFFB3A /* NIMAvatarImageView.m */,
+				6187F9EB1B81915700EFFB3A /* NIMPageView.m */,
+				6187F9EC1B81915700EFFB3A /* NIMInputEmoticonParser.m */,
+				6187F9ED1B81915700EFFB3A /* NIMInputMoreContainerView.m */,
+				61A2C8971BA6C8B9006304F9 /* NIMContactSelectConfig.m */,
+				61D99FCA1BAFF48A0059D369 /* NIMTeamCardHeaderCell.m */,
+				6187F9EE1B81915700EFFB3A /* NIMInputTextView.m */,
+				6187F9EF1B81915700EFFB3A /* NIMInputView.m */,
+				6187F9F01B81915700EFFB3A /* NIMInputToolBar.m */,
+				E479641E1CCDB95600A4534A /* NIMExtensionHelper.m */,
+				6187F9F11B81915700EFFB3A /* NIMInputEmoticonContainerView.m */,
+				61A2C8B01BA6DC4F006304F9 /* NIMPinyinConverter.m */,
+				6187F9F21B81915700EFFB3A /* NIMInputEmoticonButton.m */,
+				E4EA435C1BA7EAC3003FC1BA /* NIMNotificationContentConfig.m */,
+				6187F9F31B81915700EFFB3A /* NIMInputEmoticonManager.m */,
+				6187F9F41B81915700EFFB3A /* NIMInputEmoticonTabView.m */,
+				61F4E5691CE1DBC0000AD2A9 /* NIMKitColorButtonCell.m */,
+				61A2C8941BA6C2A1006304F9 /* NIMContactPickedView.m */,
+				6187F9F51B81915700EFFB3A /* NIMInputAudioRecordIndicatorView.m */,
+				61F4E5601CE1AF6F000AD2A9 /* NIMCommonTableDelegate.m */,
+				6187F9F61B81915700EFFB3A /* NIMSessionViewController.m */,
+				61D99FDB1BAFF6190059D369 /* NIMTeamCardRowItem.m */,
+				6187F9F71B81915700EFFB3A /* NIMSessionMessageContentView.m */,
+				6187F9F81B81915700EFFB3A /* NIMSessionTimestampCell.m */,
+				6187F9F91B81915700EFFB3A /* NIMMessageCell.m */,
+				6187F9FA1B81915700EFFB3A /* NIMSessionAudioContentView.m */,
+				E4EA43471BA7E5E5003FC1BA /* NIMBaseSessionContentConfig.m */,
+				6187F9FB1B81915700EFFB3A /* NIMSessionFileTransContentView.m */,
+				61D99FC81BAFF48A0059D369 /* NIMAdvancedTeamMemberCell.m */,
+				61A2C8AA1BA6D797006304F9 /* NIMGroupedUsrInfo.m */,
+				6187F9FC1B81915700EFFB3A /* NIMSessionImageContentView.m */,
+				61A2C8A91BA6D797006304F9 /* NIMGroupedDataCollection.m */,
+				61D99FB31BAFF4770059D369 /* NIMAdvancedTeamCardViewController.m */,
+				6187F9FD1B81915700EFFB3A /* NIMSessionLocationContentView.m */,
+				6110D8AF1C24001300805BA4 /* UITableView+NIMScrollToBottom.m */,
+				6187F9FE1B81915700EFFB3A /* NIMSessionNetChatNotifyContentView.m */,
+				6187F9FF1B81915700EFFB3A /* NIMSessionNotificationContentView.m */,
+				6187FA001B81915700EFFB3A /* NIMSessionTextContentView.m */,
+				61A2C8B11BA6DC4F006304F9 /* NIMSpellingCenter.m */,
+				6187FA011B81915700EFFB3A /* NIMSessionUnknowContentView.m */,
+				E465D3B01B84704C004F3A07 /* NIMUIConfig.m */,
+				6187FA021B81915700EFFB3A /* NIMSessionVideoContentView.m */,
+				610D71A11D0E5A9C00FCE25A /* NIMKitNotificationFirer.m */,
+				6187FA041B81915700EFFB3A /* NIMCellLayoutDefaultConfig.m */,
+				6132C7141BA7C47C00897DDB /* NIMContactDataCell.m */,
+				E4EA43591BA7EAB1003FC1BA /* NIMFileContentConfig.m */,
+				6187FA071B81915800EFFB3A /* NIMSessionMsgDatasource.m */,
+				E4EA43561BA7EAA3003FC1BA /* NIMVideoContentConfig.m */,
+				6187FA081B81915800EFFB3A /* NIMMessageCellMaker.m */,
+				E4EA43501BA7EA7F003FC1BA /* NIMImageContentConfig.m */,
+				61D99FB21BAFF4770059D369 /* NIMNormalTeamCardViewController.m */,
+				6187FA091B81915800EFFB3A /* NIMSessionViewLayoutManager.m */,
+				61D99FFB1BB008490059D369 /* NIMContactDataItem.m */,
+				6187FA0A1B81915800EFFB3A /* NIMTimestampModel.m */,
+				6187FA0B1B81915800EFFB3A /* NIMMessageMaker.m */,
+				6187FA0C1B81915800EFFB3A /* NIMDefaultValueMaker.m */,
+				615BD0F31B85A6A2000F174B /* NIMLoadProgressView.m */,
+				611B65DA1BA8591700038641 /* NIMContactSelectTabView.m */,
+				6187FA0D1B81915800EFFB3A /* NIMSessionListViewController.m */,
+				61D99FCC1BAFF48A0059D369 /* NIMTimePickerView.m */,
+				61D99FDD1BAFF6190059D369 /* NIMUsrInfoData.m */,
+				6187FA0E1B81915800EFFB3A /* NIMSessionListDefaultConfig.m */,
+				6187FA0F1B81915800EFFB3A /* NIMSessionListCell.m */,
+				61D99FB71BAFF4770059D369 /* NIMTeamMemberListViewController.m */,
+				6187FA111B81915800EFFB3A /* UIView+NIM.m */,
+				6187FA121B81915800EFFB3A /* UIImage+NIM.m */,
+				6187FA131B81915800EFFB3A /* NSString+NIM.m */,
+				6187FA141B81915800EFFB3A /* NIMAttributedLabel+NIMKit.m */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		61344C221B720CB2005A96AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = compiler-default;
+				CLANG_CXX_LIBRARY = compiler-default;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../NIMLib/NIMLib/ExportHeaders",
+					"$(SRCROOT)/../NIMAVChat/NIMAVChat/ExportHeaders",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMSDK",
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMSDK/Libs",
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMAVChat",
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMAVChat/Libs",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-l\"NIMLib\"",
+					"-l\"NIMAVChat\"",
+					"-l\"aacplus\"",
+					"-l\"crypto\"",
+					"-l\"event\"",
+					"-l\"ssl\"",
+					"-l\"nio\"",
+					"-l\"nts\"",
+					"-l\"nvs\"",
+					"-l\"openh264\"",
+					"-l\"opus\"",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		61344C231B720CB2005A96AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = compiler-default;
+				CLANG_CXX_LIBRARY = compiler-default;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf-with-dsym;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../NIMLib/NIMLib/ExportHeaders",
+					"$(SRCROOT)/../NIMAVChat/NIMAVChat/ExportHeaders",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMSDK",
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMSDK/Libs",
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMAVChat",
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMAVChat/Libs",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-l\"NIMLib\"",
+					"-l\"NIMAVChat\"",
+					"-l\"aacplus\"",
+					"-l\"crypto\"",
+					"-l\"event\"",
+					"-l\"ssl\"",
+					"-l\"nio\"",
+					"-l\"nts\"",
+					"-l\"nvs\"",
+					"-l\"openh264\"",
+					"-l\"opus\"",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6187F9311B818ED800EFFB3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = compiler-default;
+				CLANG_CXX_LIBRARY = compiler-default;
+				DEBUG_INFORMATION_FORMAT = dwarf-with-dsym;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../NIMLib/NIMLib/ExportHeaders/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMSDK",
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMSDK/Libs",
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMAVChat",
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMAVChat/Libs",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					-ObjC,
+					"-l\"NIMLib\"",
+					"-l\"NIMAVChat\"",
+					"-l\"aacplus\"",
+					"-l\"crypto\"",
+					"-l\"event\"",
+					"-l\"ssl\"",
+					"-l\"nio\"",
+					"-l\"nts\"",
+					"-l\"nvs\"",
+					"-l\"openh264\"",
+					"-l\"opus\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6187F9321B818ED800EFFB3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = compiler-default;
+				CLANG_CXX_LIBRARY = compiler-default;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../NIMLib/NIMLib/ExportHeaders/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMSDK",
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMSDK/Libs",
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMAVChat",
+					"$(PROJECT_DIR)/NIMKit/Vendors/NIMAVChat/Libs",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					-ObjC,
+					"-l\"NIMLib\"",
+					"-l\"NIMAVChat\"",
+					"-l\"aacplus\"",
+					"-l\"crypto\"",
+					"-l\"event\"",
+					"-l\"ssl\"",
+					"-l\"nio\"",
+					"-l\"nts\"",
+					"-l\"nvs\"",
+					"-l\"openh264\"",
+					"-l\"opus\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61344C0C1B720CB2005A96AE /* Build configuration list for PBXProject "Unity-iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61344C221B720CB2005A96AE /* Debug */,
+				61344C231B720CB2005A96AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6187F9301B818ED800EFFB3A /* Build configuration list for PBXNativeTarget "NIMKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6187F9311B818ED800EFFB3A /* Debug */,
+				6187F9321B818ED800EFFB3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61344C091B720CB2005A96AE /* Project object */;
+}

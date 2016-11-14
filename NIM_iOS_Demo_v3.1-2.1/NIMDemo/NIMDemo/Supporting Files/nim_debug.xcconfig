@@ -1,0 +1,15 @@
+//
+//  nim_debug.xcconfig
+//  NIM
+//
+//  Created by amao on 9/22/15.
+//  Copyright © 2015 Netease. All rights reserved.
+//
+
+#include "../../Pods/Target Support Files/Pods/Pods.debug.xcconfig"
+
+XCCONFIG_BUNDLE_ID                  = com.netease.NIM.demo
+XCCONFIG_BUNDLE_NAME                = 网易云信开发版
+XCCONFIG_CODE_SIGNING               = iPhone Developer
+XCCONFIG_PROVISIONING_PROFILE       = 8c310ded-5c03-44ba-bff5-13904f8497eb
+
