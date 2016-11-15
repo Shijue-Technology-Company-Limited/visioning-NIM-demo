@@ -12,7 +12,6 @@
 		03A4CA001AC2B79700E45E03 /* UIActionSheet+NTESBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A4C9FD1AC2B79700E45E03 /* UIActionSheet+NTESBlock.m */; };
 		181722741DD05BB0005A4076 /* libMobileCross.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 181722711DD05BB0005A4076 /* libMobileCross.a */; };
 		181722751DD05BB0005A4076 /* libsszip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 181722721DD05BB0005A4076 /* libsszip.a */; };
-		181722761DD05BB0005A4076 /* libVisionin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 181722731DD05BB0005A4076 /* libVisionin.a */; };
 		181722781DD05BEF005A4076 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181722771DD05BEF005A4076 /* MediaPlayer.framework */; };
 		1817227A1DD05BFE005A4076 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181722791DD05BFE005A4076 /* CoreImage.framework */; };
 		1817227C1DD05C09005A4076 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1817227B1DD05C09005A4076 /* CoreGraphics.framework */; };
@@ -24,6 +23,7 @@
 		181722881DD061C3005A4076 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 181722871DD061C3005A4076 /* libstdc++.tbd */; };
 		181722901DD062A3005A4076 /* VSVideoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 1817228E1DD062A3005A4076 /* VSVideoCamera.m */; };
 		183487AE1DD2FE0A00022A03 /* NTESVideoBufferConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 183487AD1DD2FE0A00022A03 /* NTESVideoBufferConverter.mm */; };
+		184C0D431DDB001100504974 /* libVisionin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 181722731DD05BB0005A4076 /* libVisionin.a */; };
 		610B1E021AFDDE04006454EA /* video_connect_chat_tip_sender.aac in Resources */ = {isa = PBXBuildFile; fileRef = 610B1DFB1AFDDE04006454EA /* video_connect_chat_tip_sender.aac */; };
 		610B1E041AFDDE04006454EA /* video_chat_tip_HangUp.aac in Resources */ = {isa = PBXBuildFile; fileRef = 610B1DFD1AFDDE04006454EA /* video_chat_tip_HangUp.aac */; };
 		610B1E051AFDDE04006454EA /* video_chat_tip_OnCall.aac in Resources */ = {isa = PBXBuildFile; fileRef = 610B1DFE1AFDDE04006454EA /* video_chat_tip_OnCall.aac */; };
@@ -639,6 +639,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184C0D431DDB001100504974 /* libVisionin.a in Frameworks */,
 				181722881DD061C3005A4076 /* libstdc++.tbd in Frameworks */,
 				181722861DD05DBC005A4076 /* OpenGLES.framework in Frameworks */,
 				181722841DD05DAF005A4076 /* QuartzCore.framework in Frameworks */,
@@ -651,7 +652,6 @@
 				181722781DD05BEF005A4076 /* MediaPlayer.framework in Frameworks */,
 				181722741DD05BB0005A4076 /* libMobileCross.a in Frameworks */,
 				181722751DD05BB0005A4076 /* libsszip.a in Frameworks */,
-				181722761DD05BB0005A4076 /* libVisionin.a in Frameworks */,
 				BD73C07F1D9905D200F1C436 /* libc++.tbd in Frameworks */,
 				619184891C45E4D000BB2FE9 /* libNIMKit.a in Frameworks */,
 				61530BEB1BABAD8200FE50CC /* libz.tbd in Frameworks */,

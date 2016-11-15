@@ -28,8 +28,8 @@
 
 @property (nonatomic,assign) BOOL oppositeCloseVideo;
 
-@property (nonatomic, strong) VSVideoFrame *videoFrame;
-@property (nonatomic, strong) UIView       *selfView;
+@property (nonatomic, strong) UIImageView      *selfView;
+
 
 #if defined (NTESUseGLView)
 @property (nonatomic, strong) NTESGLView *remoteGLView;
@@ -56,9 +56,10 @@
     }
     return self;
 }
--(UIView *)selfView{
+
+-(UIImageView *)selfView{
     if (!_selfView) {
-        _selfView  = [[UIView alloc]initWithFrame:self.view.bounds];
+        _selfView  = [[UIImageView alloc]initWithFrame:CGRectMake(10, 10, 100, 200)];
         [self.view addSubview:_selfView];
     }
     return _selfView;
@@ -69,14 +70,7 @@
     if (self) {
         self.callInfo.callType = NIMNetCallTypeVideo;
         _cameraType = [[NTESBundleSetting sharedConfig] startWithBackCamera] ? NIMNetCallCameraBack :NIMNetCallCameraFront;
-//#error 初始化
-        _videoFrame =[[VSVideoFrame alloc]initWithPosition:AVCaptureDevicePositionFront pixelFormat:kCVPixelFormatType_32BGRA view:self.selfView];
-    [_videoFrame setFrontVideoOrientation: AVCaptureVideoOrientationPortrait];
 
-//        [self.videoFrame setOutputSize:CGSizeMake(480,640)];
-        [self.videoFrame setToningLevel:1.0];
-        [self.videoFrame setSmoothLevel:1.0];
-        [self.videoFrame setBrightenLevel:1.0];
         
     }
     return self;
@@ -84,7 +78,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    __block typeof(self) parent = self;
+    [[VSVideoFrame shareInstance] setBgraPixelBlock:^(CVPixelBufferRef pixelBuffer, CMTime time) {
+        NSLog(@"buffer Calling back!!!");
+        CVPixelBufferLockBaseAddress(pixelBuffer, 0);
+        CVPixelBufferRetain(pixelBuffer);
+        CMSampleBufferRef sampleBuffer = NULL;
+        CMSampleTimingInfo timimgInfo = kCMTimingInfoInvalid;
+        CMVideoFormatDescriptionRef videoInfo = NULL;
+        CMVideoFormatDescriptionCreateForImageBuffer(
+                                                     NULL, pixelBuffer, &videoInfo);
+        CMSampleBufferCreateForImageBuffer(kCFAllocatorDefault,
+                                           pixelBuffer,
+                                           true,
+                                           NULL,
+                                           NULL,
+                                           videoInfo,
+                                           &timimgInfo,
+                                           &sampleBuffer);
+        if (parent.selfView!=nil) {
+            // 此处对性能影响比较大，如果不用测试视频流是否正确，可以把以下代码关闭
+            UIImage* image = pixelBuffer2Image(pixelBuffer);
+            dispatch_async(dispatch_get_main_queue(), ^(){
+                [parent.selfView setImage:image];
+            });
+        }
+        NSError * error = [[NIMSDK sharedSDK].netCallManager sendVideoSampleBuffer:sampleBuffer];
+        if (error) {
+            NSLog(@"视频发送错误 --- %@",error);
+        }
+        // 注意以下的释放代码
+        CFRelease(sampleBuffer);
+    }];
     if (self.localVideoLayer) {
+        //#error 初始化
+
 //        [self.localView.layer addSublayer:self.localVideoLayer];
     }
     [self initUI];
@@ -193,7 +221,7 @@
     NIMNetCallNetStatus status = [NIMSDK sharedSDK].netCallManager.netStatus;
     [self.netStatusView refreshWithNetState:status];
 //#error 开始
-    [self.videoFrame startVideoFrame];
+//    [self.videoFrame startVideoFrame];
 
     self.acceptBtn.hidden = YES;
     self.refuseBtn.hidden   = YES;
@@ -213,7 +241,6 @@
     [self.hungUpBtn removeTarget:self action:NULL forControlEvents:UIControlEventTouchUpInside];
     [self.hungUpBtn addTarget:self action:@selector(hangup) forControlEvents:UIControlEventTouchUpInside];
     self.localVideoLayer.hidden = NO;
-//    __block typeof(self) parent = self;
 
 
     

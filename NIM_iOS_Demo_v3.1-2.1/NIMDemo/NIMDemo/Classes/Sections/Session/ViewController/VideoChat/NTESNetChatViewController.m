@@ -45,7 +45,7 @@
 
 
 @property (nonatomic, strong) VSVideoFrame *videoFrame;
-@property (nonatomic, strong) UIView       *selfView;
+
 
 @end
 
@@ -53,13 +53,7 @@
 
 NTES_FORBID_INTERACTIVE_POP
 
--(UIView *)selfView{
-    if (!_selfView) {
-        _selfView  = [[UIView alloc]initWithFrame:self.view.bounds];
-        [self.view addSubview:_selfView];
-    }
-    return _selfView;
-}
+
 
 - (instancetype)initWithCallee:(NSString *)callee{
     self = [self initWithNibName:nil bundle:nil];
@@ -90,13 +84,7 @@ NTES_FORBID_INTERACTIVE_POP
         }
         _timer = [[NTESTimerHolder alloc] init];
         _diskCheckTimer = [[NTESTimerHolder alloc] init];
-        _videoFrame =[[VSVideoFrame alloc]initWithPosition:AVCaptureDevicePositionFront pixelFormat:kCVPixelFormatType_32BGRA view:self.selfView];
-        [_videoFrame setFrontVideoOrientation: AVCaptureVideoOrientationPortrait];
-        
-        //        [self.videoFrame setOutputSize:CGSizeMake(480,640)];
-        [self.videoFrame setToningLevel:1.0];
-        [self.videoFrame setSmoothLevel:1.0];
-        [self.videoFrame setBrightenLevel:1.0];
+
         //防止应用在后台状态，此时呼入，会走init但是不会走viewDidLoad,此时呼叫方挂断，导致被叫监听不到，界面无法消去的问题。
         id<NIMNetCallManager> manager = [NIMSDK sharedSDK].netCallManager;
         [manager addDelegate:self];
@@ -124,6 +112,13 @@ NTES_FORBID_INTERACTIVE_POP
             [wself dismiss:nil];
         }
     }];
+    _videoFrame =[[VSVideoFrame alloc]initWithPosition:AVCaptureDevicePositionFront pixelFormat:kCVPixelFormatType_32BGRA view:nil];
+    [_videoFrame setFrontVideoOrientation: AVCaptureVideoOrientationPortrait];
+    
+    //        [self.videoFrame setOutputSize:CGSizeMake(480,640)];
+    [self.videoFrame setToningLevel:1.0];
+    [self.videoFrame setSmoothLevel:1.0];
+    [self.videoFrame setBrightenLevel:1.0];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -183,52 +178,54 @@ NTES_FORBID_INTERACTIVE_POP
         
 //#error 获取视频流进行操作
         [option setVideoHandler: ^(CMSampleBufferRef sampleBuffer){
-            NSLog(@"ssssssssssssssssssssssss");
-            CMTime presentTimeStamp = CMSampleBufferGetPresentationTimeStamp(sampleBuffer);
-            CMTime duration = CMSampleBufferGetDuration(sampleBuffer);
-            CMTime decodeTimeStamp = CMSampleBufferGetDecodeTimeStamp(sampleBuffer);
+//            NSLog(@"ssssssssssssssssssssssss");
+//            CMTime presentTimeStamp = CMSampleBufferGetPresentationTimeStamp(sampleBuffer);
+//            CMTime duration = CMSampleBufferGetDuration(sampleBuffer);
+//            CMTime decodeTimeStamp = CMSampleBufferGetDecodeTimeStamp(sampleBuffer);
 
             CMSampleBufferRef sampleBufferBGRA = [NTESVideoBufferConverter createBGRASampleBufferFromNV12:sampleBuffer];
             if (sampleBufferBGRA) {
-                
+                NSLog(@"processing buffer!!!");
                 bool test = [[VSVideoFrame shareInstance]processVideoSampleBuffer:sampleBufferBGRA];
             //发送视频流
-                [[VSVideoFrame shareInstance] setBgraPixelBlock:^(CVPixelBufferRef buffer, CMTime time) {
-                    CVPixelBufferLockBaseAddress(buffer, 0);
-                    CVPixelBufferRetain(buffer);
-                    CMSampleBufferRef LeesampleBuffer = NULL;
-                    
-                    CMSampleTimingInfo timingInfo = kCMTimingInfoInvalid;
-                    timingInfo.decodeTimeStamp = decodeTimeStamp;
-                    timingInfo.duration = duration;
-                    timingInfo.presentationTimeStamp = presentTimeStamp;
-                    
-                    CMVideoFormatDescriptionRef videoInfo = NULL;
-                    CMVideoFormatDescriptionCreateForImageBuffer(NULL, buffer, &videoInfo);
-                    CMSampleBufferCreateForImageBuffer(kCFAllocatorDefault,
-                                                       buffer,
-                                                       true,
-                                                       NULL,
-                                                       NULL,
-                                                       videoInfo,
-                                                       &timingInfo,
-                                                       &LeesampleBuffer);
-                    NSError * error = [[NIMSDK sharedSDK].netCallManager sendVideoSampleBuffer:LeesampleBuffer];
-                    if (error) {
-                        NSLog(@"视频发送错误 --- %@",error);
-                    }
-                    if (LeesampleBuffer) {
-                        CFRelease(LeesampleBuffer);
-                    }
-                    
-                }];
+//                [[VSVideoFrame shareInstance] setBgraPixelBlock:^(CVPixelBufferRef buffer, CMTime time) {
+//                    CVPixelBufferLockBaseAddress(buffer, 0);
+//                    CVPixelBufferRetain(buffer);
+//                    CMSampleBufferRef LeesampleBuffer = NULL;
+//                    
+//                    CMSampleTimingInfo timingInfo = kCMTimingInfoInvalid;
+//                    timingInfo.decodeTimeStamp = decodeTimeStamp;
+//                    timingInfo.duration = duration;
+//                    timingInfo.presentationTimeStamp = presentTimeStamp;
+//                    
+//                    CMVideoFormatDescriptionRef videoInfo = NULL;
+//                    CMVideoFormatDescriptionCreateForImageBuffer(NULL, buffer, &videoInfo);
+//                    CMSampleBufferCreateForImageBuffer(kCFAllocatorDefault,
+//                                                       buffer,
+//                                                       true,
+//                                                       NULL,
+//                                                       NULL,
+//                                                       videoInfo,
+//                                                       &timingInfo,
+//                                                       &LeesampleBuffer);
+//                    NSError * error = [[NIMSDK sharedSDK].netCallManager sendVideoSampleBuffer:LeesampleBuffer];
+//                    if (error) {
+//                        NSLog(@"视频发送错误 --- %@",error);
+//                    }
+//                    if (LeesampleBuffer) {
+//                        CFRelease(LeesampleBuffer);
+//                    }
+//                    
+//                }];
                 CFRelease(sampleBufferBGRA);
             }
-
         }];
 
         [self fillUserSetting:option];
         [[NIMSDK sharedSDK].netCallManager start:callees type:wself.callInfo.callType option:option completion:^(NSError *error, UInt64 callID) {
+            [[VSVideoFrame shareInstance] startVideoFrame];
+            NSLog(@"leeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
+            
             if (!error && wself) {
                 wself.callInfo.callID = callID;
                 wself.chatRoom = [[NSMutableArray alloc]init];
@@ -237,6 +234,14 @@ NTES_FORBID_INTERACTIVE_POP
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                     [wself onControl:callID from:wself.callInfo.callee type:NIMNetCallControlTypeFeedabck];
                 });
+                
+                
+                
+                
+                
+                
+                
+                
             }else{
                 if (error) {
                     [wself.navigationController.view makeToast:@"连接失败"
@@ -268,7 +273,7 @@ NTES_FORBID_INTERACTIVE_POP
 - (void)hangup{
     _userHangup = YES;
     [[VSVideoFrame shareInstance] stopVideoFrame];
-
+    NSLog(@"lesssssssssssssssssssssssssssssssssssssssss");
     [[NIMSDK sharedSDK].netCallManager hangup:self.callInfo.callID];
 //#error 结束
     if (self.callInfo.localRecording) {
@@ -478,12 +483,12 @@ NTES_FORBID_INTERACTIVE_POP
         if (self.callInfo.localRecording) {
             __weak typeof(self) wself = self;
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                [[VSVideoFrame shareInstance] stopVideoFrame];
+                //[[VSVideoFrame shareInstance] stopVideoFrame];
                 [wself dismiss:nil];
             });
         }
         else {
-            [[VSVideoFrame shareInstance] stopVideoFrame];
+            //[[VSVideoFrame shareInstance] stopVideoFrame];
             [self dismiss:nil];
         }
     }
