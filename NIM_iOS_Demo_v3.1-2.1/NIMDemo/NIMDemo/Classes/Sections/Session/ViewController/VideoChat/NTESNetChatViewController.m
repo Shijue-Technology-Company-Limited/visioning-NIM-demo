@@ -294,12 +294,21 @@ NTES_FORBID_INTERACTIVE_POP
     _calleeResponsed = YES;
     
     NIMNetCallOption *option = [[NIMNetCallOption alloc] init];
-    [self fillUserSetting:option];
     
     __weak typeof(self) wself = self;
-
+    [option setVideoHandler: ^(CMSampleBufferRef sampleBuffer){
+        CMSampleBufferRef sampleBufferBGRA = [NTESVideoBufferConverter createBGRASampleBufferFromNV12:sampleBuffer];
+        if (sampleBufferBGRA) {
+            NSLog(@"processing buffer!!!");
+            bool test = [[VSVideoFrame shareInstance]processVideoSampleBuffer:sampleBufferBGRA];
+            CFRelease(sampleBufferBGRA);
+        }
+    }];
+    [self fillUserSetting:option];
     [[NIMSDK sharedSDK].netCallManager response:self.callInfo.callID accept:accept option:option completion:^(NSError *error, UInt64 callID) {
+    
         if (!error) {
+                [[VSVideoFrame shareInstance] startVideoFrame];
                 [wself onCalling];
                 [wself.player stop];
                 [wself.chatRoom addObject:wself.callInfo.callee];
