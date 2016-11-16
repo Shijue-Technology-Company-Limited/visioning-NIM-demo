@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.netease.nrtc.demo.widget.ResizingTextTextView
+        xmlns:ex="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/uid"
+        android:padding="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textSize="12sp"
+        ex:resizing_text_min_size="5sp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/render"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="7"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:orientation="horizontal">
+            
+            <View
+                android:background="@color/light_blue"
+                android:layout_weight="1"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"/>
+
+            <View
+                android:background="@color/cyan"
+                android:layout_weight="1"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"/>
+
+            <View
+                android:background="@color/teal"
+                android:layout_weight="1"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"/>
+
+            <View
+                android:background="@color/green"
+                android:layout_weight="1"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"/>
+
+            <View
+                android:background="@color/light_green"
+                android:layout_weight="1"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp" />
+
+            <View
+                android:background="@color/lime"
+                android:layout_weight="1"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"/>
+
+            <View
+                android:background="@color/brown"
+                android:layout_weight="1"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_above="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.netease.nrtc.demo.widget.ResizingTextTextView
+                xmlns:ex="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/audio_local_muted"
+                android:padding="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textSize="10sp"
+                ex:resizing_text_min_size="5sp"
+                android:layout_weight="1"/>
+
+
+            <com.netease.nrtc.demo.widget.ResizingTextTextView
+                xmlns:ex="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/video_local_muted"
+                android:padding="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textSize="10sp"
+                ex:resizing_text_min_size="5sp"
+                android:layout_weight="1"/>
+
+
+
+            <com.netease.nrtc.demo.widget.ResizingTextTextView
+                xmlns:ex="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/audio_remote_muted"
+                android:padding="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textSize="10sp"
+                ex:resizing_text_min_size="5sp"
+                android:layout_weight="1"/>
+
+
+            <com.netease.nrtc.demo.widget.ResizingTextTextView
+                xmlns:ex="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/video_remote_muted"
+                android:padding="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textSize="10sp"
+                ex:resizing_text_min_size="5sp"
+                android:layout_weight="1"/>
+
+
+            <com.netease.nrtc.demo.widget.ResizingTextTextView
+                xmlns:ex="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/audio_speaking"
+                android:padding="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textSize="10sp"
+                ex:resizing_text_min_size="5sp"
+                android:layout_weight="1"
+                android:text="="/>
+
+
+            <com.netease.nrtc.demo.widget.ResizingTextTextView
+                xmlns:ex="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/recording"
+                android:padding="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textSize="10sp"
+                ex:resizing_text_min_size="5sp"
+                android:layout_weight="1"/>
+
+
+            <com.netease.nrtc.demo.widget.ResizingTextTextView
+                xmlns:ex="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fps"
+                android:padding="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textSize="10sp"
+                ex:resizing_text_min_size="5sp"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

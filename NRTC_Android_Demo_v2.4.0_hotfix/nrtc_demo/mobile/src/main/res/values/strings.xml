@@ -1,0 +1,247 @@
+<resources>
+    <string name="app_name">云信 NRTC</string>
+
+    <string name="action_settings">设置</string>
+    <string name="action_about">关于</string>
+
+    <string name="button_audio">Audio</string>
+    <string name="button_video">Video</string>
+
+
+    <string name="setting_title">设置</string>
+    <string name="setting_net">网络</string>
+    <string name="setting_voe">语音通话</string>
+    <string name="setting_vie">视频通话</string>
+    <string name="setting_live">互动直播</string>
+    <string name="setting_other">其它</string>
+
+    <string name="setting_vie_crop_key">setting_vie_crop_key</string>
+    <string name="setting_vie_crop">画面裁剪</string>
+
+    <string name="setting_vie_quality_key">setting_vie_quality_key</string>
+    <string name="setting_vie_quality">视频清晰度</string>
+    <string-array name="setting_vie_quality_entries"> 
+        <item>Default</item> 
+        <item>Low</item> 
+        <item>Medium</item> 
+        <item>High</item> 
+        <item>480P</item> 
+        <item>720P</item>
+    </string-array>
+    <string-array name="setting_vie_quality_values"> 
+        <item>0</item> 
+        <item>1</item> 
+        <item>2</item> 
+        <item>3</item> 
+        <item>4</item> 
+        <item>5</item> 
+    </string-array>
+
+
+    <string name="setting_vie_frame_scale_type_key">setting_vie_frame_scale_type_key</string>
+    <string name="setting_vie_frame_scale_type">缩放模式</string>
+    <string-array name="setting_vie_frame_scale_type_entries"> 
+        <item>FIT</item> 
+        <item>FILL</item> 
+        <item>BALANCED</item> 
+    </string-array>
+    <string-array name="setting_vie_frame_scale_type_values"> 
+        <item>0</item> 
+        <item>1</item> 
+        <item>2</item> 
+    </string-array>
+
+    <string name="setting_vie_frame_rate_key">setting_vie_frame_rate_key</string>
+    <string name="setting_vie_frame_rate">视频帧率</string>
+    <string-array name="setting_vie_frame_rate_entries"> 
+        <item>5</item> 
+        <item>10</item> 
+        <item>15</item> 
+        <item>20</item> 
+        <item>25</item> 
+    </string-array>
+    <string-array name="setting_vie_frame_rate_values"> 
+        <item>5</item> 
+        <item>10</item> 
+        <item>15</item> 
+        <item>20</item> 
+        <item>25</item> 
+    </string-array>
+
+
+    <string-array name="setting_vie_hw_encoder_entries"> 
+        <item>自动</item> 
+        <item>禁用</item> 
+        <item>强制</item> 
+    </string-array>
+    <string-array name="setting_vie_hw_encoder_values"> 
+        <item>0</item> 
+        <item>1</item> 
+        <item>2</item> 
+    </string-array>
+
+    <string-array name="setting_other_device_rotation_entries"> 
+        <item>0</item> 
+        <item>90</item> 
+        <item>180</item> 
+        <item>270</item> 
+    </string-array>
+    <string-array name="setting_other_device_rotation_values"> 
+        <item>0</item> 
+        <item>1</item> 
+        <item>2</item> 
+        <item>3</item> 
+    </string-array>
+
+    <string-array name="setting_vie_hw_decoder_entries"> 
+        <item>自动</item> 
+        <item>禁用</item> 
+        <item>强制</item> 
+    </string-array>
+    <string-array name="setting_vie_hw_decoder_values"> 
+        <item>0</item> 
+        <item>1</item> 
+        <item>2</item> 
+    </string-array>
+
+
+    <string-array name="setting_voe_audio_effect_entries"> 
+        <item>Disable</item> 
+        <item>SDK Built-In</item> 
+        <item>Platform Built-In</item> 
+    </string-array>
+    <string-array name="setting_voe_audio_effect_values"> 
+        <item>0</item> 
+        <item>1</item> 
+        <item>2</item> 
+    </string-array>
+
+    <string name="setting_other_device_default_rotation_key">setting_other_device_default_rotation_key</string>
+    <string name="setting_other_device_default_rotation">设备默认旋转角度(特殊设备使用)</string>
+
+    <string name="setting_other_device_rotation_fixed_offset_key">setting_other_device_rotation_fixed_offset_key</string>
+    <string name="setting_other_device_rotation_fixed_offset">设备旋转角度修正偏移量(特殊设备使用)</string>
+
+    <string name="setting_vie_rotation_key">setting_vie_rotation_key</string>
+    <string name="setting_vie_rotation">画面旋转</string>
+
+    <string name="setting_vie_default_front_camera_key">setting_vie_default_front_camera_key</string>
+    <string name="setting_vie_default_front_camera">默认前置摄像头</string>
+
+    <string name="setting_vie_hw_encoder_key">setting_vie_hw_encoder_key</string>
+    <string name="setting_vie_hw_encoder">硬件编码(仅部分设备支持)</string>
+
+    <string name="setting_vie_hw_decoder_key">setting_vie_hw_decoder_key</string>
+    <string name="setting_vie_hw_decoder">硬件解码(仅部分设备支持)</string>
+
+    <string name="setting_other_server_record_audio_key">setting_other_server_record_audio_key</string>
+    <string name="setting_other_server_record_audio">音频服务器录制</string>
+
+    <string name="setting_other_server_record_video_key">setting_other_server_record_video_key</string>
+    <string name="setting_other_server_record_video">视频服务器录制</string>
+
+    <string name="setting_voe_call_proximity_key">setting_voe_call_proximity_key</string>
+    <string name="setting_voe_call_proximity">通话期间关闭屏幕</string>
+
+    <string name="setting_voe_muted_key">setting_voe_muted_key</string>
+    <string name="setting_voe_muted">语音流静音处理</string>
+
+    <string name="setting_vie_muted_key">setting_vie_muted_key</string>
+    <string name="setting_vie_muted">视频流静音处理</string>
+
+    <string name="setting_vie_fps_reported_key">setting_vie_fps_reported_key</string>
+    <string name="setting_vie_fps_reported">帧率汇报</string>
+
+    <string name="setting_live_status_key">setting_live_status_key</string>
+    <string name="setting_live_status">互动直播</string>
+
+    <string name="setting_live_url_key">setting_live_url_key</string>
+    <string name="setting_live_url">旁路直播推流地址</string>
+
+    <string name="setting_vie_max_bitrate_key">setting_vie_max_bitrate_key</string>
+    <string name="setting_vie_max_bitrate">最大码率(Kbps)</string>
+
+
+    <string name="setting_voe_audio_aec_key">setting_voe_audio_aec_key</string>
+    <string name="setting_voe_audio_aec">Acoustic Echo Canceler</string>
+
+    <string name="setting_voe_audio_agc_key">setting_voe_audio_agc_key</string>
+    <string name="setting_voe_audio_agc">Automatic Gain Control</string>
+
+    <string name="setting_voe_audio_ns_key">setting_voe_audio_ns_key</string>
+    <string name="setting_voe_audio_ns">Noise Suppressor</string>
+
+
+    <string name="setting_net_proxy_key">setting_net_proxy_key</string>
+    <string name="setting_net_proxy">网络代理</string>
+
+    <string name="setting_net_proxy_user_name_key">setting_net_proxy_user_name_key</string>
+    <string name="setting_net_proxy_user_name">用户名</string>
+
+    <string name="setting_net_proxy_user_password_key">setting_net_proxy_user_password_key</string>
+    <string name="setting_net_proxy_user_password">密码</string>
+
+    <string name="setting_net_proxy_addr_ip_key">setting_net_proxy_addr_ip_key</string>
+    <string name="setting_net_proxy_addr_ip">地址</string>
+
+    <string name="setting_net_proxy_addr_port_key">setting_net_proxy_addr_port_key</string>
+    <string name="setting_net_proxy_addr_port">端口</string>
+
+
+    <string name="about_title">关于</string>
+    <string name="about_nrtc_sdk">NRTC SDK</string>
+    <string name="about_nrtc_demo">NRTC Demo</string>
+
+    <string name="about_nrtc_sdk_version_name_key">about_nrtc_version_name_key</string>
+    <string name="about_nrtc_sdk_version_name">Version Name</string>
+
+    <string name="about_nrtc_sdk_version_code_key">about_nrtc_version_code_key</string>
+    <string name="about_nrtc_sdk_version_code">Version Code</string>
+
+    <string name="about_nrtc_sdk_build_type_key">about_nrtc_build_type_key</string>
+    <string name="about_nrtc_sdk_build_type">Build Type</string>
+
+    <string name="about_nrtc_sdk_build_time_key">about_nrtc_build_time_key</string>
+    <string name="about_nrtc_sdk_build_time">Build Date</string>
+
+    <string name="about_nrtc_sdk_build_tag_key">about_nrtc_build_tag_key</string>
+    <string name="about_nrtc_sdk_build_tag">Build Revision</string>
+
+    <string name="about_nrtc_sdk_build_branch_key">about_nrtc_sdk_build_branch_key</string>
+    <string name="about_nrtc_sdk_build_branch">Build Branch</string>
+
+    <string name="about_nrtc_sdk_build_host_key">about_nrtc_sdk_build_host_key</string>
+    <string name="about_nrtc_sdk_build_host">Build Host</string>
+
+    <string name="about_nrtc_sdk_version_server_env_key">about_nrtc_sdk_version_server_env_key</string>
+    <string name="about_nrtc_sdk_version_server_env">Server</string>
+
+    <string name="about_nrtc_demo_version_name_key">about_nrtc_demo_version_name_key</string>
+    <string name="about_nrtc_demo_version_name">Version Name</string>
+
+    <string name="about_nrtc_demo_version_code_key">about_nrtc_demo_version_code_key</string>
+    <string name="about_nrtc_demo_version_code">Version Code</string>
+
+    <string name="about_nrtc_demo_version_server_env_key">about_nrtc_demo_version_server_env_key</string>
+    <string name="about_nrtc_demo_version_server_env">Server</string>
+
+
+    <string name="button_call">呼叫</string>
+    <string name="button_handup">挂断</string>
+
+    <string name="button_start_record">开始录制</string>
+    <string name="button_stop_record">停止录制</string>
+
+    <string name="button_mute">静音</string>
+    <string name="button_speaker">扬声器</string>
+
+    <string name="button_camera">摄像头</string>
+
+    <string name="button_switch_camera">切换摄像头</string>
+    <string name="button_switch_render">切换画面</string>
+    <string name="button_switch_mode">切换模式</string>
+
+    <string name="button_snapshot">截图</string>
+
+
+</resources>

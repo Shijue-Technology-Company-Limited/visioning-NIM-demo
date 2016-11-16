@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/about_nrtc_demo">
+
+        <Preference
+            android:key="@string/about_nrtc_demo_version_name_key"
+            android:title="@string/about_nrtc_demo_version_name" />
+
+        <Preference
+            android:key="@string/about_nrtc_demo_version_code_key"
+            android:title="@string/about_nrtc_demo_version_code" />
+
+        <Preference
+            android:key="@string/about_nrtc_demo_version_server_env_key"
+            android:title="@string/about_nrtc_demo_version_server_env" />
+
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/about_nrtc_sdk">
+
+        <Preference
+            android:key="@string/about_nrtc_sdk_version_name_key"
+            android:title="@string/about_nrtc_sdk_version_name" />
+
+        <Preference
+            android:key="@string/about_nrtc_sdk_version_code_key"
+            android:title="@string/about_nrtc_sdk_version_code" />
+
+
+        <Preference
+            android:key="@string/about_nrtc_sdk_build_type_key"
+            android:title="@string/about_nrtc_sdk_build_type" />
+
+
+        <Preference
+            android:key="@string/about_nrtc_sdk_build_time_key"
+            android:title="@string/about_nrtc_sdk_build_time" />
+
+
+        <Preference
+            android:key="@string/about_nrtc_sdk_build_tag_key"
+            android:title="@string/about_nrtc_sdk_build_tag" />
+
+        <Preference
+            android:key="@string/about_nrtc_sdk_build_branch_key"
+            android:title="@string/about_nrtc_sdk_build_branch" />
+
+        <Preference
+            android:key="@string/about_nrtc_sdk_version_server_env_key"
+            android:title="@string/about_nrtc_sdk_version_server_env" />
+
+        <Preference
+            android:key="@string/about_nrtc_sdk_build_host_key"
+            android:title="@string/about_nrtc_sdk_build_host" />
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>
