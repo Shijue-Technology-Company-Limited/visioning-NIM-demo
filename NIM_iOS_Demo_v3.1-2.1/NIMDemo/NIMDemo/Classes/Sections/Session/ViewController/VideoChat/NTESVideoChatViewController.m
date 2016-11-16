@@ -85,6 +85,7 @@
         CVPixelBufferRetain(pixelBuffer);
         CMSampleBufferRef sampleBuffer = NULL;
         CMSampleTimingInfo timimgInfo = kCMTimingInfoInvalid;
+        timimgInfo.presentationTimeStamp = time;
         CMVideoFormatDescriptionRef videoInfo = NULL;
         CMVideoFormatDescriptionCreateForImageBuffer(
                                                      NULL, pixelBuffer, &videoInfo);
