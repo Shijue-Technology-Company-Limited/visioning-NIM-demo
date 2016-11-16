@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="nrtc-sdk-2.4.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mobile/libs/nrtc-sdk-2.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

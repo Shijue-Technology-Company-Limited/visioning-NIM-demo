@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/libs/nrtc-sdk-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8a529037d69dc0782d908a7275aa5301b7ebc4b5">
+        <dex dex="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/pre-dexed/debug/nrtc-sdk-2.4.0_499690f0fc13f3d4cb30e9ddd8978b187ddc0028.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/libs/org.apache.http.legacy.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="017030d11901291abf8f83a812984276b643ea0f">
+        <dex dex="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/pre-dexed/debug/org.apache.http.legacy_37077f33135aa462b0ae71a6ec57f159f25441f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_c146832853e7066f79e2351bef9664f66ec58c43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sj/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_0f79bcdbc96d51482a0931c03d863c1bf4e897d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_6e3ae5b501d25ae22a9d6d2c82dc1697804c9631.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/libs/fastjson.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="94d4ebd4acdaf01d7445435382eea2d2d38e7534">
+        <dex dex="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/pre-dexed/debug/fastjson_d6ed24c15cca01f05bb3f29bfec38b99d6df6194.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_838bac29d2bd3258f9cab53f9a2471ac881f4f3c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/nrtc_demo/effect/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d95d53ba47ba2688cf2ea8cee264f024682bdfd0">
+        <dex dex="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/pre-dexed/debug/nrtc_demo-effect-unspecified_6c7cfbccb727f80cf1d9040925a5570c4d0eacf7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/libs/visioninSDK.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a3de9b7d2f80e5ace9987db6dd81291961cf9027">
+        <dex dex="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/pre-dexed/debug/visioninSDK_238608b8999c8c4abdb98f6d67b815ff22f11600.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_5c9e96c18c8b58a65d0c7da26ec60338b9c0adc1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_2390ac08b45bbf30550263e871faaf4c3987d431.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="/Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.4.0_f8fbc8656a57226fb540ce71aa3680fb7f1eef3a.jar" />
+    </item>
+
+</items>

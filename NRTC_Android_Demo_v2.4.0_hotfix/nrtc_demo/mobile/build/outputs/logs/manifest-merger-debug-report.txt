@@ -1,0 +1,153 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:2:1-52:12
+	package
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:3:5-36
+		INJECTED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml
+		INJECTED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml
+		INJECTED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml
+		INJECTED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:7:5-76
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:7:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:8:22-73
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:9:5-72
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:9:22-70
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:11:22-65
+uses-permission#android.permission.CAMERA
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:12:5-65
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:12:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:13:5-71
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:13:22-68
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:14:22-77
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:15:5-68
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:15:22-65
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:16:22-78
+uses-feature#android.hardware.camera
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:18:5-60
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:18:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:19:5-70
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:19:19-67
+uses-feature#0x00020000
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:20:5-78
+	android:glEsVersion
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:20:19-51
+	android:required
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:20:52-75
+application
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:22:5-50:19
+MERGED from [com.android.support:cardview-v7:23.4.0] /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [nrtc_demo:effect:unspecified] /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/nrtc_demo/effect/unspecified/AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:27:9-41
+	android:supportsRtl
+		ADDED from [nrtc_demo:effect:unspecified] /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/nrtc_demo/effect/unspecified/AndroidManifest.xml:14:9-35
+	android:allowBackup
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:24:9-35
+	android:icon
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:25:9-43
+	android:largeHeap
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:26:9-33
+	android:theme
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:28:9-40
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:23:9-40
+activity#com.netease.nrtc.demo.MainActivity
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:29:9-37:20
+	android:label
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:31:13-45
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:30:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:32:13-36:29
+action#android.intent.action.MAIN
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:35:27-74
+activity#com.netease.nrtc.demo.ChatActivity
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:39:9-41:61
+	android:configChanges
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:41:13-59
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:40:13-41
+activity#com.netease.nrtc.demo.settings.SettingActivity
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:43:9-62
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:43:19-59
+activity#com.netease.nrtc.demo.settings.AboutActivity
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:44:9-60
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:44:19-57
+activity#com.netease.nrtc.demo.MultiChatActivity
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:45:9-47:52
+	android:screenOrientation
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:47:13-49
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:46:13-46
+meta-data#io.fabric.ApiKey
+ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:49:9-111
+	android:value
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:49:52-108
+	android:name
+		ADDED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml:49:20-51
+uses-sdk
+INJECTED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:cardview-v7:23.4.0] /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [nrtc_demo:effect:unspecified] /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/nrtc_demo/effect/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml
+		INJECTED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml
+		INJECTED from /Users/sj/Desktop/NRTC_Android_Demo_v2.4.0_hotfix/nrtc_demo/mobile/src/main/AndroidManifest.xml
