@@ -1,0 +1,1 @@
+VisioninSDK的使用在NTESNetChatViewController和NTESVideoChatViewController里。
